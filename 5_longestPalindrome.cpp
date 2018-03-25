@@ -1,4 +1,4 @@
-// time limit exceeded 
+// Time limit exceeded 
 class Solution {
 public:
     string longestPalindrome(string s) {
