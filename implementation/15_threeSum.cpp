@@ -4,28 +4,34 @@ public:
     	vector<vector<int>> result;
     	result.clear();
     	sort(nums.begin(), nums.end());
-        while (nums.size() >= 3) {
-        	auto pivot = nums.front();
-        	auto target = 0 - pivot;
-        	auto iter_start = nums.erase(nums.begin());
-        	auto iter_end = nums.end();
-        	iter_end--;
-        	while (iter_start != iter_end) {
-        		auto start = *iter_start;
-        		auto end = *iter_end;
-        		if (start + end == target) {
-	        		vector<int> temp;
-	        		temp.clear();
-	        		temp.push_back(pivot);
-	        		temp.push_back(start);
-	        		temp.push_back(end);
-	        		result.push_back(temp);
-        		} else if (start + end < target) {
-        			iter_start++;
-        		} else {
-        			iter_end--;
-        		}
-        	}
+        for (auto i = 0; i < nums.size(); ++i) {
+            auto start = i + 1;
+            auto end = nums.size() - 1;
+            auto target = - nums[i];
+            while (start < end) {
+                auto sum = nums[start] + nums[end];
+                if (sum > target) {
+                    end--;
+                } else if (sum < target) {
+                    start++;
+                } else {
+                    vector<int> temp;
+                    temp.clear();
+                    temp.push_back(nums[i]);
+                    temp.push_back(nums[start]);
+                    temp.push_back(nums[end]);
+                    result.push_back(temp);
+                    while (start < end && nums[start] == temp[1]) {
+                        start++;
+                    }
+                    while (start < end && nums[end] == temp[0]) {
+                        end--;
+                    }
+                }
+            }
+            while (i + 1 < nums.size() && nums[i + 1] == nums[i]) {
+                i++;
+            }
         }
         return result;
     }
