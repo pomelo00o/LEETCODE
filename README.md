@@ -35,6 +35,7 @@ ___
 * [`53-maxSubArray`](https://github.com/Tom-Pomelo/Leetcode/blob/master/implementation/53_maxSubArray.cpp)
 * [`66-plusOne`](https://github.com/Tom-Pomelo/Leetcode/blob/master/implementation/66_plusOne.cpp)
 * [`67-addBinary`](https://github.com/Tom-Pomelo/Leetcode/blob/master/implementation/67_addBinary.cpp)
+* [`69-mySqrt`](https://github.com/Tom-Pomelo/Leetcode/blob/master/implementation/69_mySqrt.cpp)
 * [`70-climbStairs`](https://github.com/Tom-Pomelo/Leetcode/blob/master/implementation/70_climbStairs.cpp)
 * [`83-deleteDuplicates`](https://github.com/Tom-Pomelo/Leetcode/blob/master/implementation/83_deleteDuplicates.cpp)
 * [`94-inorderTraversal`](https://github.com/Tom-Pomelo/Leetcode/blob/master/implementation/94_inorderTraversal.cpp)
