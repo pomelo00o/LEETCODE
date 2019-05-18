@@ -9,30 +9,26 @@
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        auto p = l1;
-        auto q = l2;
-        ListNode *Ans = new ListNode(0);
-        auto *Curr = Ans;
-        auto sum = 0;
-        auto carry = 0;
-        while (true) {
-        	if (p) {
-        		sum += p->val;
-        		p = p->next;
-        	}
-        	if (q) {
-        		sum += q->val;
-        		q = q->next;
-        	}
-        	Curr->val = sum % 10;
-        	sum /= 10;
-        	if (p || q || sum) {
-        		Curr->next = new ListNode(0);
-        		Curr = Curr->next;
-        	} else {
-                break;
-            }
-        }
-        return Ans;
+		ListNode* dummy = new ListNode(-1);
+		ListNode* cur = dummy;
+		auto carry = 0;
+		while (l1 || l2) {
+			auto v1 = l1 ? l1->val : 0;
+			auto v2 = l2 ? l2->val : 0;
+			auto sum = v1 + v2 + carry;
+			carry = sum / 10;
+			cur->next = new ListNode(sum % 10);
+			cur = cur->next;
+			if (l1) {
+				l1 = l1->next;
+			}
+			if (l2) {
+				l2 = l2->next;
+			}
+		}
+		if (carry) {
+			cur->next = new ListNode(1);
+		}
+		return dummy->next;
     }
 };
