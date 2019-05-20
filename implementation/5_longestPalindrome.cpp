@@ -1,46 +1,25 @@
-// Time limit exceeded 
 class Solution {
 public:
     string longestPalindrome(string s) {
-    	string t = reverseString(s);
-    	string ans = findCommonSubString(s, t);
-    	return ans;
-    }
-
-    string reverseString(string s) {
-    	string str(s.rbegin(),s.rend());
-        return str;
-    }
-
-    string findCommonSubString(string s, string t) {
-    	auto len = s.length();
-    	if (len == 0) {
-    		return "";
-    	}
-    	auto target_len = len;
-    	while (true) {
-    		for (auto i = 0; i < len - target_len + 1; ++i) {
-    			auto temp = s.substr(i, target_len);
-    			std::size_t found = t.find(temp);
-  				if (found!=std::string::npos) {
-  					if (!checkPalindrome(temp)) {
-    					return temp;
-    				}
-  				}
-    		}
-            target_len--;
-    	}
-    }
-
-    bool checkPalindrome(string s) {
-    	auto len = s.length();
-    	bool neg = false;
-    	for (auto i = 0; i < len; ++i) {
-    		if (s[i] != s[len - i - 1]) {
-    			neg = true;
-    			break;
-    		}
-    	}
-    	return neg;
+		string t ="$#";
+        for (int i = 0; i < s.size(); ++i) {
+            t += s[i];
+            t += '#';
+        }
+        int p[t.size()] = {0}, id = 0, mx = 0, resId = 0, resMx = 0;
+        for (int i = 1; i < t.size(); ++i) {
+            p[i] = mx > i ? min(p[2 * id - i], mx - i) : 1;
+            while (t[i + p[i]] == t[i - p[i]]) ++p[i];
+            if (mx < i + p[i]) {
+                mx = i + p[i];
+                id = i;
+            }
+            if (resMx < p[i]) {
+                resMx = p[i];
+                resId = i;
+            }
+        }
+        return s.substr((resId - resMx) / 2, resMx - 1);
     }
 };
+// TODO: Manacher's Algorithm

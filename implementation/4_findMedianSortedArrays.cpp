@@ -1,29 +1,25 @@
 class Solution {
 public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
-        vector<int> v;
-        v.clear();
-        auto len1 = nums1.size();
-        auto len2 = nums2.size();
-        for (auto i = 0; i < len1; ++i) {
-        	v.push_back(nums1[i]);
+        int m = nums1.size(), n = nums2.size(), left = (m + n + 1) / 2, right = (m + n + 2) / 2;
+        return (findKthElement(nums1, 0, nums2, 0, left) + findKthElement(nums1, 0, nums2, 0, right)) / 2.0;
+    }
+    int findKthElement(vector<int> &nums1, int i, vector<int> &nums2, int j, int k) {
+        if (i >= nums1.size()) {
+            return nums2[j + k - 1];
         }
-        for (auto i = 0; i < len2; ++i) {
-        	v.push_back(nums2[i]);
+        if (j >= nums2.size()) {
+            return nums1[i + k -1];
         }
-        std::sort(v.begin(), v.end());
-        auto len_target = v.size();
-
-        if (len_target == 0) {
-        	return 0;
-        } else if (len_target == 1) {
-        	return v[0];
+        if (k == 1) {
+            return min(nums1[i], nums2[j]);
+        }
+        int mid_1 = (i + k/2 - 1 < nums1.size()) ? nums1[i + k/2 - 1] : __INT_MAX__;
+        int mid_2 = (j + k/2 - 1 < nums2.size()) ? nums2[j + k/2 - 1] : __INT_MAX__;
+        if (mid_1 > mid_2) {
+            return findKthElement(nums1, i, nums2, j + k/2, k - k/2);
         } else {
-        	if (len_target % 2 == 0) {
-        		return (double(v[len_target / 2 - 1]) + double(v[len_target / 2])) / 2;
-        	} else {
-        		return v[(len_target - 1) / 2];
-        	}
+            return findKthElement(nums1, i + k/2, nums2, j, k - k/2);
         }
     }
 };
