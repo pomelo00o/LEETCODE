@@ -1,11 +1,15 @@
 class Solution {
 public:
     string intToRoman(int num) {
-        string romanPieces[]={"","I","II","III","IV","V","VI","VII","VIII","IX",
-                              "","X","XX","XXX","XL","L","LX","LXX","LXXX","XC",
-                              "","C","CC","CCC","CD","D","DC","DCC","DCCC","CM",
-                              "","M","MM","MMM","MMMM"};
-        return romanPieces[num/1000+30]+romanPieces[(num/100)%10+20]
-            +romanPieces[(num/10)%10+10]+romanPieces[num%10];
+        vector<int> val{1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+        vector<string> str{"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+        string res = "";
+        for (int i = 0; i < val.size(); ++i) {
+            while (num >= val[i]) {
+                num -= val[i];
+                res += str[i];
+            }
+        }
+        return res;
     }
 };
