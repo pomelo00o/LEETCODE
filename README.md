@@ -24,6 +24,7 @@ ___
 * [`15-threeSum`](./implementation/15_threeSum.cpp)
 * [`16-threeSumClosest`](./implementation/16_threeSumClosest.cpp)
 * [`17-letterCombinations`](./implementation/17_letterCombinations.cpp)
+* [`18-fourSum`](./implementation/18_fourSum.cpp)
 * [`19-removeNthFromEnd`](./implementation/19_removeNthFromEnd.cpp)
 * [`20-isValid`](./implementation/20_isValid.cpp)
 * [`21-mergeTwoLists`](./implementation/21_mergeTwoLists.cpp)
