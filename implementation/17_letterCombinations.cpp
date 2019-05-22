@@ -2,20 +2,22 @@ class Solution {
 public:
     vector<string> letterCombinations(string digits) {
         if (digits.empty()) {
-            vector<string> vec;
-            return vec;
+            return {};
         }
-        string num2letter[] = {" ", " ", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
-        vector<string> result(1, "");
-        for (auto i = 0; i < digits.size(); ++i) {
-            vector<string> temp;
-            for (auto j = 0; j < result.size(); ++j) {
-                for(auto k = 0; k < num2letter[digits[i] - '0'].size(); ++k) {  
-                    temp.push_back(result[j] + num2letter[digits[i] - '0'][k]);  
-                }
-            }
-            result = temp;
+        vector<string> res;
+        vector<string> dict{" ", " ", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+        letterCombinationsDFS(digits, dict, 0, "", res);
+        return res;
+    }
+
+    void letterCombinationsDFS(string& digits, vector<string>& dict, int level, string out, vector<string>& res) {
+        if (level == digits.size()) {
+            res.push_back(out);
+            return;
         }
-        return result;
+        string str = dict[digits[level] - '0'];
+        for (int i = 0; i < str.size(); ++i) {
+            letterCombinationsDFS(digits, dict, level + 1, out + str[i], res);
+        }
     }
 };
