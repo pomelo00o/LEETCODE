@@ -1,17 +1,20 @@
 class Solution {
 public:
     vector<string> generateParenthesis(int n) {
-    	vector<string> ret;
-        helper(ret, "", n, n);
-        return ret;
+    	vector<string> res;
+        generateParenthesisDFS(res, "", n, n);
+        return res;
     }
 
-    void helper(vector<string> & res, string str, int left, int right){
-        if(left == 0 && right == 0){
-            res.push_back(str);
+    void generateParenthesisDFS(vector<string> & res, string out, int left, int right){
+        if (left > right) {
             return;
         }
-        if(left > 0) helper(res, str + "(", left - 1, right);
-        if(right > left) helper(res, str + ")", left, right - 1);
+        if(left == 0 && right == 0){
+            res.push_back(out);
+            return;
+        }
+        if(left > 0) generateParenthesisDFS(res, out + "(", left - 1, right);
+        if(right > 0) generateParenthesisDFS(res, out + ")", left, right - 1);
     }
 };
