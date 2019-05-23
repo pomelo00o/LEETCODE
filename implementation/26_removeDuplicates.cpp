@@ -1,19 +1,16 @@
 class Solution {
 public:
 	int removeDuplicates(vector<int>& nums) {
-		auto i = 0;
-		auto j = 1;
 		if (nums.empty()) {
 			return 0;
 		}
-		for(i = 1; i < nums.size(); ++i)
-		{
-			if (nums[i] == nums[i - 1]) {
-				continue;
-			} else {
-				nums[j++]=nums[i];
+		int walker = 0, runner = 0;
+		for (runner = 0; runner < nums.size(); ++runner) {
+			if (nums[walker] != nums[runner]) {
+				++walker;
+				nums[walker] = nums[runner];
 			}
 		}
-		return  j;
+		return walker + 1;
 	}
 };

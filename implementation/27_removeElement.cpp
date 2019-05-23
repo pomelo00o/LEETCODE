@@ -1,14 +1,13 @@
 class Solution {
 public:
     int removeElement(vector<int>& nums, int val) {
-        auto iter = nums.begin();
-        while (iter != nums.end()) {
-        	if ((*iter) == val) {
-        		nums.erase(iter);
-        	} else {
-        		iter++;
-        	}
+        int res = 0;
+        for (int i = 0; i < nums.size(); ++i) {
+            if (nums[i] != val) {
+                nums[res] = nums[i];
+                ++res;
+            }
         }
-        return nums.size();
+        return res;
     }
 };
