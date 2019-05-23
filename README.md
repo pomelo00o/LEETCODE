@@ -30,6 +30,7 @@ ___
 * [`21-mergeTwoLists`](./implementation/21_mergeTwoLists.cpp)
 * [`22-generateParenthesis`](./implementation/22_generateParenthesis.cpp)
 * [`23-mergeKLists`](./implementation/23_mergeKLists.cpp)
+* [`24-swapPairs`](./implementation/24_swapPairs.cpp)
 * [`26-removeDuplicates`](./implementation/26_removeDuplicates.cpp)
 * [`27-removeElement`](./implementation/27_removeElement.cpp)
 * [`28-strStr`](./implementation/28_strStr.cpp)
