@@ -37,8 +37,15 @@ ___
 * [`28-strStr`](./implementation/28_strStr.cpp)
 * [`29-divide`](./implementation/29_divide.cpp)
 * [`30-findSubstring`](./implementation/30_findSubstring.cpp)
+* [`31-nextPermutation`](./implementation/31_nextPermutation.cpp)
+* [`32-longestValidParentheses`](./implementation/32_longestValidParentheses.cpp)
+* [`33-search`](./implementation/33_search.cpp)
+* [`34-searchRange`](./implementation/34_searchRange.cpp)
+* [`35-searchInsert`](./implementation/35_searchInsert.js)
 * [`46-permute`](./implementation/46_permute.cpp)
 * [`48-rotate`](./implementation/48_rotate.cpp)
+* [`49-groupAnagrams`](./implementation/49_groupAnagrams.js)
+* [`50-myPow`](./implementation/50_myPow.js)
 * [`53-maxSubArray`](./implementation/53_maxSubArray.cpp)
 * [`66-plusOne`](./implementation/66_plusOne.cpp)
 * [`67-addBinary`](./implementation/67_addBinary.cpp)
@@ -64,6 +71,7 @@ ___
 * [`198-rob`](./implementation/198_rob.cpp)
 * [`206-reverseList`](./implementation/206_reverseList.cpp)
 * [`226-invertTree`](./implementation/226_invertTree.cpp)
+* [`232-MyQueue`](./implementation/232_MyQueue.cpp)
 * [`234-isPalindrome`](./implementation/234_isPalindrome.cpp)
 * [`242-isAnagram`](./implementation/242_isAnagram.cpp)
 * [`283-moveZeroes`](./implementation/283_moveZeroes.cpp)
@@ -81,6 +89,9 @@ ___
 * [`637-averageOfLevels`](./implementation/637_averageOfLevels.cpp)
 * [`687-longestUnivaluePath`](./implementation/687_longestUnivaluePath.cpp)
 * [`771-numJewelsInStones`](./implementation/771_numJewelsInStones.cpp)
+* [`1073-addNegabinary`](./implementation/1073_addNegabinary.cpp)
+* [`1089-duplicateZeros`](./implementation/1089_duplicateZeros.cpp)
+* [`1090-largestValsFromLabels`](./implementation/1090_largestValsFromLabels.cpp)
 
 ___
 ### CopyRight All Rights Reserved.
