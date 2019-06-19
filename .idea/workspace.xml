@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="855c7e45-7c6b-4edd-9381-e9f2ab7b9f10" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/file_rename.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/11368b831ae55237/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/145d1fb85b51f274/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/1636601b41cff34a/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/1b8c8f1164ccb436/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/1f0838dba8b95177/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/200f60f83cb6face/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/281225bb29e13cd1/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/2bb6969928716898/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/3108e03fa28117a9/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/3d8dd1d5947b4544/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/3de5b75ec7b08208/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/3f54d3cf70270f7d/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/411c1a48e059747a/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/44398d57caff6b7/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/4f34f6bcd7dcd382/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/4fd447116587df8c/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/530a5aba526ba0dd/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/53743e628c897af3/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/559404149bef4e2e/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/5776d58492394fb8/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/57d01b6344328f82/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/58fb1fe977519dad/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/708991154782100d/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/75c829d4399e3118/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/9b1724b72d0089a6/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/9b872051a8cec2b/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/9c8fb65ac489e84/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/a0b1612f473c0d4e/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/a342d905dd6532c5/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/a82e09d87d94744d/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/b172de12fac096e5/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/ba83117f3b8bba14/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/badba4f075e37304/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/bb43d9ad5dfde685/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/bb4e6c463042fe35/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/c15d9e98baa22284/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/c62447e5c7122988/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/c9bea92291b66a1d/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/ce2b4ca9604963a4/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/d6b89d7c267899aa/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/d7f7dc33b2114ff4/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/dcd2d2eb9d767a95/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/dd0bba2a4c09c17a/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/dd869b9f52871b6b/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/de3091a169a35e1/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/e48a41d0b1da3709/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/e4e396410e5af717/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/f5bcbc7ed27e6929/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/fc9c117992dbf38e/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/fdbc63c53c7b9c13/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/fff48599c60e2737/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/ipch/fff8f21df8852a2f/mmap_address.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/100_isSameTree.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/101_isSymmetric.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/102_levelOrder.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/104_maxDepth.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/1073_addNegabinary.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/107_levelOrderBottom.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/1089_duplicateZeros.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/1090_largestValsFromLabels.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/10_isMatch.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/119_getRow.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/11_maxArea.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/120_minimumTotal.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/121_maxProfit.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/12_intToRoman.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/136_singleNumber.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/13_romanToInt.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/141_hasCycle.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/14_longestCommonPrefix.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/155_minStack.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/15_threeSum.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/160_getIntersectionNode.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/169_majorityElement.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/16_threeSumClosest.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/176_SecondHighestSalary.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/17_letterCombinations.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/18_fourSum.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/190_reverseBits.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/191_hammingWeight.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/198_rob.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/19_removeNthFromEnd.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/1_twoSum.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/206_reverseList.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/20_isValid.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/21_mergeTwoLists.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/226_invertTree.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/22_generateParenthesis.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/232_MyQueue.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/234_isPalindrome.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/23_mergeKLists.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/242_isAnagram.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/24_swapPairs.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/25_reverseKGroup.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/26_removeDuplicates.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/27_removeElement.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/283_moveZeroes.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/28_strStr.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/29_divide.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/2_addTwoNumbers.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/30_findSubstring.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/31_nextPermutation.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/32_longestValidParentheses.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/33_search.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/34_searchRange.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/35_searchInsert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/375_getMoneyAmount.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/3_lengthOfLongestSubstring.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/413_numberOfArithmeticSlices.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/437_pathSum.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/438_findAnagrams.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/448_findDisappearedNumbers.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/461_hammingDistance.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/46_permute.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/48_rotate.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/49_groupAnagrams.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/4_findMedianSortedArrays.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/50_myPow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/538_convertBST.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/53_maxSubArray.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/543_diameterOfBinaryTree.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/572_isSubtree.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/581_findUnsortedSubarray.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/5_longestPalindrome.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/617_mergeTrees.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/637_averageOfLevels.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/66_plusOne.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/67_addBinary.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/687_longestUnivaluePath.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/69_mySqrt.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/6_convert.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/70_climbStairs.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/771_numJewelsInStones.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/7_reverse.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/83_deleteDuplicates.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/8_myAtoi.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/912_sortArray.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/929_numUniqueEmails.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/94_inorderTraversal.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/9_isPalindrome.cpp" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Leetcode$file_rename.coverage" NAME="file_rename Coverage Results" MODIFIED="1560950992539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="file_rename.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/file_rename.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1.twoSum.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/1.twoSum.cpp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/file_rename.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Leetcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="/anaconda3/bin/python3.6" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings sdk-home="/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6">
+        <option name="mySdkHome" value="/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="file_rename" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Leetcode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/file_rename.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.file_rename" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="855c7e45-7c6b-4edd-9381-e9f2ab7b9f10" name="Default" comment="" />
+      <created>1560950226105</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560950226105</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32917705" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32917705" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.49127182" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/file_rename.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/1.twoSum.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/1_twoSum.cpp" />
+    <entry file="file://$PROJECT_DIR$/Source/1.twoSum.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file_rename.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
