@@ -42,6 +42,7 @@ ___
 * [`33-search`](./Source/33.search.cpp)
 * [`34-searchRange`](./Source/34.searchRange.cpp)
 * [`35-searchInsert`](./Source/35.searchInsert.js)
+* [`36-valid-sudoku`](./Source/36.valid-sudoku.cpp)
 * [`46-permute`](./Source/46.permute.cpp)
 * [`48-rotate`](./Source/48.rotate.cpp)
 * [`49-groupAnagrams`](./Source/49.groupAnagrams.js)
