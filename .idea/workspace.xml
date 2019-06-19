@@ -2,148 +2,97 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="855c7e45-7c6b-4edd-9381-e9f2ab7b9f10" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/file_rename.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/11368b831ae55237/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/145d1fb85b51f274/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/1636601b41cff34a/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/1b8c8f1164ccb436/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/1f0838dba8b95177/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/200f60f83cb6face/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/281225bb29e13cd1/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/2bb6969928716898/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/3108e03fa28117a9/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/3d8dd1d5947b4544/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/3de5b75ec7b08208/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/3f54d3cf70270f7d/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/411c1a48e059747a/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/44398d57caff6b7/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/4f34f6bcd7dcd382/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/4fd447116587df8c/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/530a5aba526ba0dd/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/53743e628c897af3/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/559404149bef4e2e/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/5776d58492394fb8/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/57d01b6344328f82/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/58fb1fe977519dad/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/708991154782100d/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/75c829d4399e3118/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/9b1724b72d0089a6/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/9b872051a8cec2b/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/9c8fb65ac489e84/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/a0b1612f473c0d4e/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/a342d905dd6532c5/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/a82e09d87d94744d/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/b172de12fac096e5/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/ba83117f3b8bba14/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/badba4f075e37304/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/bb43d9ad5dfde685/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/bb4e6c463042fe35/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/c15d9e98baa22284/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/c62447e5c7122988/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/c9bea92291b66a1d/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/ce2b4ca9604963a4/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/d6b89d7c267899aa/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/d7f7dc33b2114ff4/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/dcd2d2eb9d767a95/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/dd0bba2a4c09c17a/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/dd869b9f52871b6b/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/de3091a169a35e1/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/e48a41d0b1da3709/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/e4e396410e5af717/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/f5bcbc7ed27e6929/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/fc9c117992dbf38e/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/fdbc63c53c7b9c13/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/fff48599c60e2737/mmap_address.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/ipch/fff8f21df8852a2f/mmap_address.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/100_isSameTree.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/101_isSymmetric.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/102_levelOrder.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/104_maxDepth.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/1073_addNegabinary.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/107_levelOrderBottom.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/1089_duplicateZeros.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/1090_largestValsFromLabels.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/10_isMatch.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/119_getRow.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/11_maxArea.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/120_minimumTotal.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/121_maxProfit.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/12_intToRoman.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/136_singleNumber.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/13_romanToInt.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/141_hasCycle.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/14_longestCommonPrefix.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/155_minStack.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/15_threeSum.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/160_getIntersectionNode.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/169_majorityElement.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/16_threeSumClosest.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/176_SecondHighestSalary.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/17_letterCombinations.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/18_fourSum.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/190_reverseBits.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/191_hammingWeight.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/198_rob.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/19_removeNthFromEnd.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/1_twoSum.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/206_reverseList.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/20_isValid.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/21_mergeTwoLists.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/226_invertTree.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/22_generateParenthesis.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/232_MyQueue.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/234_isPalindrome.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/23_mergeKLists.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/242_isAnagram.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/24_swapPairs.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/25_reverseKGroup.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/26_removeDuplicates.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/27_removeElement.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/283_moveZeroes.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/28_strStr.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/29_divide.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/2_addTwoNumbers.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/30_findSubstring.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/31_nextPermutation.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/32_longestValidParentheses.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/33_search.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/34_searchRange.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/35_searchInsert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/375_getMoneyAmount.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/3_lengthOfLongestSubstring.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/413_numberOfArithmeticSlices.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/437_pathSum.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/438_findAnagrams.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/448_findDisappearedNumbers.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/461_hammingDistance.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/46_permute.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/48_rotate.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/49_groupAnagrams.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/4_findMedianSortedArrays.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/50_myPow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/538_convertBST.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/53_maxSubArray.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/543_diameterOfBinaryTree.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/572_isSubtree.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/581_findUnsortedSubarray.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/5_longestPalindrome.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/617_mergeTrees.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/637_averageOfLevels.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/66_plusOne.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/67_addBinary.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/687_longestUnivaluePath.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/69_mySqrt.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/6_convert.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/70_climbStairs.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/771_numJewelsInStones.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/7_reverse.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/83_deleteDuplicates.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/8_myAtoi.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/912_sortArray.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/929_numUniqueEmails.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/94_inorderTraversal.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/9_isPalindrome.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/1.twoSum.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/10.isMatch.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/100.isSameTree.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/101.isSymmetric.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/102.levelOrder.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/104.maxDepth.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/107.levelOrderBottom.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/1073.addNegabinary.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/1089.duplicateZeros.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/1090.largestValsFromLabels.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/11.maxArea.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/119.getRow.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/12.intToRoman.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/120.minimumTotal.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/121.maxProfit.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/13.romanToInt.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/136.singleNumber.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/14.longestCommonPrefix.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/141.hasCycle.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/15.threeSum.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/155.minStack.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/16.threeSumClosest.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/160.getIntersectionNode.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/169.majorityElement.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/17.letterCombinations.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/176.SecondHighestSalary.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/18.fourSum.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/19.removeNthFromEnd.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/190.reverseBits.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/191.hammingWeight.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/198.rob.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/2.addTwoNumbers.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/20.isValid.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/206.reverseList.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/21.mergeTwoLists.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/22.generateParenthesis.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/226.invertTree.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/23.mergeKLists.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/232.MyQueue.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/234.isPalindrome.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/24.swapPairs.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/242.isAnagram.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/25.reverseKGroup.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/26.removeDuplicates.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/27.removeElement.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/28.strStr.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/283.moveZeroes.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/29.divide.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/3.lengthOfLongestSubstring.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/30.findSubstring.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/31.nextPermutation.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/32.longestValidParentheses.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/33.search.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/34.searchRange.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/35.searchInsert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/36.valid-sudoku.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/375.getMoneyAmount.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/4.findMedianSortedArrays.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/413.numberOfArithmeticSlices.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/437.pathSum.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/438.findAnagrams.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/448.findDisappearedNumbers.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/46.permute.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/461.hammingDistance.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/48.rotate.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/49.groupAnagrams.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/5.longestPalindrome.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/50.myPow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/53.maxSubArray.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/538.convertBST.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/543.diameterOfBinaryTree.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/572.isSubtree.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/581.findUnsortedSubarray.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/6.convert.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/617.mergeTrees.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/637.averageOfLevels.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/66.plusOne.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/67.addBinary.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/687.longestUnivaluePath.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/69.mySqrt.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/7.reverse.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/70.climbStairs.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/771.numJewelsInStones.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/8.myAtoi.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/83.deleteDuplicates.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/9.isPalindrome.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/912.sortArray.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/929.numUniqueEmails.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/94.inorderTraversal.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto_markdown.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto_markdown.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -153,25 +102,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Leetcode$auto_markdown.coverage" NAME="auto_markdown Coverage Results" MODIFIED="1560957656746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Leetcode$file_rename.coverage" NAME="file_rename Coverage Results" MODIFIED="1560950992539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="file_rename.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/file_rename.py">
+    <leaf>
+      <file leaf-file-name="auto_markdown.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auto_markdown.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1.twoSum.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/1.twoSum.cpp">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-1162">
+                <caret line="10" selection-start-line="10" selection-end-line="10" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -190,6 +144,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/file_rename.py" />
+        <option value="$PROJECT_DIR$/READMEE.md" />
+        <option value="$PROJECT_DIR$/test.md.py" />
+        <option value="$PROJECT_DIR$/test.md" />
+        <option value="$PROJECT_DIR$/auto_markdown.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -228,7 +187,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="/anaconda3/bin/python3.6" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -252,7 +211,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.auto_markdown">
+    <configuration name="auto_markdown" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Leetcode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto_markdown.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="file_rename" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Leetcode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -272,8 +250,13 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <list>
+      <item itemvalue="Python.file_rename" />
+      <item itemvalue="Python.auto_markdown" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.auto_markdown" />
         <item itemvalue="Python.file_rename" />
       </list>
     </recent_temporary>
@@ -293,21 +276,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32917705" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32917705" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.49127182" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32917705" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3990025" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -323,14 +307,60 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="7" />
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>f.read()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>f.readlines()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>content.insert(9, lines)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>content</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>int(elem.split(&quot;.&quot;)[0])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>elem.split(&quot;.&quot;)[0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/file_rename.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/1.twoSum.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/file_rename.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -341,13 +371,30 @@
     <entry file="file://$PROJECT_DIR$/Source/1.twoSum.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/READMEE.md" />
+    <entry file="file://$PROJECT_DIR$/test.md.py" />
+    <entry file="file://$PROJECT_DIR$/test.md" />
     <entry file="file://$PROJECT_DIR$/file_rename.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auto_markdown.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-1162">
+            <caret line="10" selection-start-line="10" selection-end-line="10" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
