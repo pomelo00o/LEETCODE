@@ -44,6 +44,8 @@ ___
 + [`34-searchRange`](./src/34.searchRange.cpp)
 + [`35-searchInser`](./src/35.searchInsert.js)
 + [`36-valid-sudoku`](./src/36.valid-sudoku.cpp)
++ [`38-count-and-say`](./src/38.count-and-say.cpp)
++ [`39-combination-sum`](./src/39.combination-sum.cpp)
 + [`46-permute`](./src/46.permute.cpp)
 + [`48-rotate`](./src/48.rotate.cpp)
 + [`49-groupAnagram`](./src/49.groupAnagrams.js)
