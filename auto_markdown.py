@@ -15,14 +15,17 @@ def add_file():
         file_list = os.listdir(dir)
         file_list.sort(key = take_curr_index)
 
-        pos = 10
+        start_pos = content.index('## <a name = "solution" /> Solution') + 1
+        end_pos = content.index('### CopyRight All Rights Reserved.')
+        content = content[: start_pos + 1] + content[end_pos:]
+
         for file_name in file_list:
             file_path = dir + '/' + file_name
             name_in_md = file_name.replace('.', '-')
             lines = '+ [`' + name_in_md[:len(name_in_md) - 4] + '`](' + file_path + ')'
             if lines not in content:
-                content.insert(pos, lines)
-                pos += 1
+                content.insert(start_pos, lines)
+                start_pos += 1
 
         insert = "\n".join(content)
         f.write(insert)
