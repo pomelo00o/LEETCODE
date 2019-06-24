@@ -10,7 +10,7 @@ class Solution {
 public:
     ListNode* deleteDuplicates(ListNode* head) {
     	auto curr = head;
-    	while (curr != NULL && curr->next != NULL) {
+    	while (curr != nullptr && curr->next != nullptr) {
     		if (curr->val == curr->next->val) {
         		curr->next = curr->next->next;
         	} else {
