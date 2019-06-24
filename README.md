@@ -103,5 +103,6 @@ ___
 + [`1090-largestValsFromLabels`](./src/1090.largestValsFromLabels.cpp)
 + [`1093-sampleStats`](./src/1093.sampleStats.cpp)
 + [`1094-carPooling`](./src/1094.carPooling.cpp)
++ [`1095-findInMountainArray`](./src/1095.findInMountainArray.cpp)
 
 ### CopyRight All Rights Reserved.

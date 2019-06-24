@@ -16,6 +16,7 @@ def add_file():
         file_list.sort(key = take_curr_index)
 
         start_pos = content.index('## <a name = "solution" /> Solution') + 1
+        content.insert(start_pos, "");
         end_pos = content.index('### CopyRight All Rights Reserved.')
         content = content[: start_pos + 1] + content[end_pos:]
 
@@ -26,7 +27,7 @@ def add_file():
             if lines not in content:
                 content.insert(start_pos, lines)
                 start_pos += 1
-
+        
         insert = "\n".join(content)
         f.write(insert)
 
