@@ -10,14 +10,13 @@ class Solution {
 public:
     bool isPalindrome(ListNode* head) {
     	vector<int> vec;
-    	vec.clear();
-    	while (head != NULL) {
+    	while (head) {
     		vec.push_back(head->val);
     		head = head->next;
     	}
     	vector<int> reverse_vec;
     	vector<int>::reverse_iterator reverse_iter;
-    	for (reverse_iter=vec.rbegin(); reverse_iter!=vec.rend(); ++reverse_iter) {
+    	for (reverse_iter = vec.rbegin(); reverse_iter != vec.rend(); reverse_iter++) {
         	reverse_vec.push_back(*reverse_iter);
     	}
     	return vec_cmp(vec, reverse_vec);
