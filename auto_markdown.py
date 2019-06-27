@@ -13,6 +13,8 @@ def add_file():
     with open(file_name, "w+") as f:
         dir = "./src"
         file_list = os.listdir(dir)
+        if file_list.index(".DS_Store") > -1:
+            file_list.remove(".DS_Store")
         file_list.sort(key = take_curr_index)
 
         start_pos = content.index('## <a name = "solution" /> Solution') + 1
