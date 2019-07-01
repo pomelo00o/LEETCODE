@@ -27,12 +27,8 @@ def add_file():
             if lines not in content:
                 content.insert(start_pos, lines)
                 start_pos += 1
-<<<<<<< HEAD
-        
-=======
 
         content.insert(start_pos, "")
->>>>>>> Linked-list
         insert = "\n".join(content)
         f.write(insert)
 
