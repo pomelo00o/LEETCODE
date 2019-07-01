@@ -1,3 +1,8 @@
+/*
+ * @lc app=leetcode id=104 lang=cpp
+ *
+ * [104] Maximum Depth of Binary Tree
+ */
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -10,10 +15,8 @@
 class Solution {
 public:
     int maxDepth(TreeNode* root) {
-        if (root == NULL) {
-        	return 0;
-        } else {
-        	return 1 + max(maxDepth(root->left), maxDepth(root->right));
-        }
+        if (!root) return 0;
+        return 1 + max(maxDepth(root->left), maxDepth(root->right));
     }
 };
+
