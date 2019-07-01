@@ -13,13 +13,11 @@ def add_file():
     with open(file_name, "w+") as f:
         dir = "./src"
         file_list = os.listdir(dir)
-        if file_list.index(".DS_Store") > -1:
-            file_list.remove(".DS_Store")
         file_list.sort(key = take_curr_index)
 
         start_pos = content.index('## <a name = "solution" /> Solution') + 1
         end_pos = content.index('### CopyRight All Rights Reserved.')
-        content = content[: start_pos + 1] + content[end_pos:]
+        content = content[: start_pos] + content[end_pos:]
 
         for file_name in file_list:
             file_path = dir + '/' + file_name
@@ -29,6 +27,7 @@ def add_file():
                 content.insert(start_pos, lines)
                 start_pos += 1
 
+        content.insert(start_pos, "")
         insert = "\n".join(content)
         f.write(insert)
 
