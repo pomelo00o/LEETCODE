@@ -18,7 +18,7 @@ def add_file():
         start_pos = content.index('## <a name = "solution" /> Solution') + 1
         content.insert(start_pos, "");
         end_pos = content.index('### CopyRight All Rights Reserved.')
-        content = content[: start_pos + 1] + content[end_pos:]
+        content = content[: start_pos] + content[end_pos:]
 
         for file_name in file_list:
             file_path = dir + '/' + file_name
@@ -27,7 +27,12 @@ def add_file():
             if lines not in content:
                 content.insert(start_pos, lines)
                 start_pos += 1
+<<<<<<< HEAD
         
+=======
+
+        content.insert(start_pos, "")
+>>>>>>> Linked-list
         insert = "\n".join(content)
         f.write(insert)
 
