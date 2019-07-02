@@ -13,10 +13,15 @@ def add_file():
     with open(file_name, "w+") as f:
         dir = "./src"
         file_list = os.listdir(dir)
+        print("Finished tasks = ", len(file_list))
+        file_to_remove = ".DS_Store"
+        if ".DS_Store" in file_list:
+            file_list.remove(file_to_remove)
+
         file_list.sort(key = take_curr_index)
 
         start_pos = content.index('## <a name = "solution" /> Solution') + 1
-        content.insert(start_pos, "");
+        content.insert(start_pos, "")
         end_pos = content.index('### CopyRight All Rights Reserved.')
         content = content[: start_pos] + content[end_pos:]
 
