@@ -14,8 +14,12 @@
  */
 class Solution {
 public:
-    TreeNode* increasingBST(TreeNode* root) {
-        
+    TreeNode* increasingBST(TreeNode* root, TreeNode* tail = nullptr) {
+        if (!root) return tail;
+        auto res = increasingBST(root->left, root);
+        root->left = nullptr;
+        root->right = increasingBST(root->right, tail);
+        return res;
     }
 };
 
