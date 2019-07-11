@@ -100,6 +100,7 @@ ___
 + [`438-findAnagrams`](./src/438.findAnagrams.cpp)
 + [`445-add-two-numbers-ii`](./src/445.add-two-numbers-ii.cpp)
 + [`448-findDisappearedNumbers`](./src/448.findDisappearedNumbers.cpp)
++ [`450-delete-node-in-a-bst`](./src/450.delete-node-in-a-bst.cpp)
 + [`461-hammingDistance`](./src/461.hammingDistance.cpp)
 + [`538-convertBST`](./src/538.convertBST.cpp)
 + [`543-diameter-of-binary-tree`](./src/543.diameter-of-binary-tree.cpp)
