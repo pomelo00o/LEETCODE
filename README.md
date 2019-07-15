@@ -118,6 +118,7 @@ ___
 + [`637-averageOfLevels`](./src/637.averageOfLevels.cpp)
 + [`662-maximum-width-of-binary-tree`](./src/662.maximum-width-of-binary-tree.cpp)
 + [`687-longestUnivaluePath`](./src/687.longestUnivaluePath.cpp)
++ [`704-binary-search`](./src/704.binary-search.cpp)
 + [`707-design-linked-list`](./src/707.design-linked-list.cpp)
 + [`771-numJewelsInStones`](./src/771.numJewelsInStones.cpp)
 + [`872-leaf-similar-trees`](./src/872.leaf-similar-trees.cpp)
