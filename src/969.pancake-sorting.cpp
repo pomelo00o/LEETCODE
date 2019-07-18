@@ -17,7 +17,7 @@ public:
         if (A.empty()) return;
         int size = A.size();
         auto maxPos = max_element(A.begin(), A.end()) - A.begin();
-        if (maxPos != 0) reverse(A.begin(), A.begin() + maxPos - 1);
+        if (maxPos != 0) reverse(A.begin(), A.begin() + maxPos + 1);
         reverse(A.begin(), A.end());
         auto max = A[size - 1];
         A.erase(A.begin() + size - 1);
