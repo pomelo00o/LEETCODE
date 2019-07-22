@@ -6,18 +6,14 @@
 class Solution {
 public:
     void wiggleSort(vector<int>& nums) {
-        if (nums.empty() || nums.size() == 1) return;
-        int left = 0;
-        int maxEle = nums[left];
-        while (left < nums.size()) {
-            for (int i = left + 1; i < nums.size(); ++i) {
-                if (nums[i] < nums[left]) {
-                    swap(nums[i], nums[left]);
-                } else {
-                    maxEle = max(nums[left], maxEle);
-                }
-            }
-            left += 1;
+        auto tmp = nums;
+        sort(tmp.begin(), tmp.end());
+        int n = nums.size(), k = (n + 1) / 2;
+        for (int i = 0; i < nums.size(); ++i) {
+            if (i % 2 == 0)
+                nums[i] = tmp[--k];
+            else
+                nums[i] = tmp[--n];
         }
     }
 };

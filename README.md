@@ -85,6 +85,7 @@ ___
 + [`148-sort-list`](./src/148.sort-list.cpp)
 + [`155-minStack`](./src/155.minStack.cpp)
 + [`160-intersection-of-two-linked-lists`](./src/160.intersection-of-two-linked-lists.cpp)
++ [`162-find-peak-element`](./src/162.find-peak-element.cpp)
 + [`169-majorityElement`](./src/169.majorityElement.cpp)
 + [`173-binary-search-tree-iterator`](./src/173.binary-search-tree-iterator.cpp)
 + [`176-SecondHighestSalary`](./src/176.SecondHighestSalary.sql)
