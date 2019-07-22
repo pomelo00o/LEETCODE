@@ -56,6 +56,7 @@ ___
 + [`67-addBinary`](./src/67.addBinary.cpp)
 + [`69-mySqrt`](./src/69.mySqrt.cpp)
 + [`70-climbStairs`](./src/70.climbStairs.cpp)
++ [`74-search-a-2-d-matrix`](./src/74.search-a-2-d-matrix.cpp)
 + [`82-remove-duplicates-from-sorted-list-ii`](./src/82.remove-duplicates-from-sorted-list-ii.cpp)
 + [`83-deleteDuplicates`](./src/83.deleteDuplicates.cpp)
 + [`92-reverse-linked-list-ii`](./src/92.reverse-linked-list-ii.cpp)
