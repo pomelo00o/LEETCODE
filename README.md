@@ -22,7 +22,7 @@ ___
 + [`13-romanToInt`](./src/13.romanToInt.cpp)
 + [`14-longestCommonPrefix`](./src/14.longestCommonPrefix.cpp)
 + [`15-3-sum`](./src/15.3-sum.cpp)
-+ [`16-threeSumClosest`](./src/16.threeSumClosest.cpp)
++ [`16-3-sum-closest`](./src/16.3-sum-closest.cpp)
 + [`17-letterCombinations`](./src/17.letterCombinations.cpp)
 + [`18-fourSum`](./src/18.fourSum.cpp)
 + [`19-removeNthFromEnd`](./src/19.removeNthFromEnd.cpp)
