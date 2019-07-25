@@ -37,7 +37,7 @@ ___
 + [`28-strStr`](./src/28.strStr.cpp)
 + [`29-divide`](./src/29.divide.cpp)
 + [`30-findSubstring`](./src/30.findSubstring.cpp)
-+ [`31-nextPermutation`](./src/31.nextPermutation.cpp)
++ [`31-next-permutation`](./src/31.next-permutation.cpp)
 + [`32-longestValidParentheses`](./src/32.longestValidParentheses.cpp)
 + [`33-search`](./src/33.search.cpp)
 + [`34-searchRange`](./src/34.searchRange.cpp)
