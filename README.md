@@ -105,6 +105,7 @@ ___
 + [`240-search-a-2-d-matrix-ii`](./src/240.search-a-2-d-matrix-ii.cpp)
 + [`242-isAnagram`](./src/242.isAnagram.cpp)
 + [`283-moveZeroes`](./src/283.moveZeroes.cpp)
++ [`300-longest-increasing-subsequence`](./src/300.longest-increasing-subsequence.cpp)
 + [`313-super-ugly-number`](./src/313.super-ugly-number.cpp)
 + [`324-wiggle-sort-ii`](./src/324.wiggle-sort-ii.cpp)
 + [`375-getMoneyAmount`](./src/375.getMoneyAmount.cpp)
