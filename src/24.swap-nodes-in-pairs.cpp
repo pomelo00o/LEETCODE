@@ -1,3 +1,8 @@
+/*
+ * @lc app=leetcode id=24 lang=cpp
+ *
+ * [24] Swap Nodes in Pairs
+ */
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -9,6 +14,14 @@
 class Solution {
 public:
     ListNode* swapPairs(ListNode* head) {
+        // recursive way
+        if (!head || !(head->next)) return head;
+        ListNode* newHead = head->next;
+        head->next = swapPairs(head->next->next);
+        newHead->next = head;
+        return newHead;
+
+        // iterative way
         ListNode* dummy = new ListNode(-1);
         ListNode* prev = dummy;
         dummy->next = head;
@@ -25,3 +38,4 @@ public:
         return dummy->next;
     }
 };
+

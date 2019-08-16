@@ -33,6 +33,14 @@ public:
     }
 
     ListNode* reverse(ListNode* head) {
+        // recursive way
+        if (!head || !(head->next)) return head;
+        ListNode* n = reverse(head->next);
+        head->next->next = head;
+        head->next = nullptr;
+        return n;
+
+        // iterative way
         ListNode *prev = nullptr;
         while (head) {
             ListNode *next = head->next;
