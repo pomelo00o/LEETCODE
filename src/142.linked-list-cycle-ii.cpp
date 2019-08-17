@@ -14,22 +14,32 @@
 class Solution {
 public:
     ListNode *detectCycle(ListNode *head) {
+        // first step to do is to detect whether there is a cycle
+        // the basic idea is to set a walker and a runner
+        // if they meet ==> hasCycle = true
+
+        // second step is to put the walker back to head
+        // set them to speed one
+        // next time they will meet at the intersection point
         if (!head || !(head->next)) return nullptr;
-        ListNode* fast = head;
         ListNode* slow = head;
-        ListNode* entry = head;
-        while (fast->next && fast->next->next) {
-            fast = fast->next->next;
+        ListNode* fast = head;
+        bool hasCycle = false;
+        while (fast && fast->next) {
             slow = slow->next;
+            fast = fast->next->next;
             if (slow == fast) {
-                while (slow != entry) {
-                    slow = slow->next;
-                    entry = entry->next;
-                }
-                return entry;
+                hasCycle = true;
+                break;
             }
         }
-        return nullptr;
+        if (!hasCycle) return nullptr;
+        slow = head;
+        while (slow != fast) {
+            slow = slow->next;
+            fast = fast->next;
+        }
+        return slow;
     }
 };
 

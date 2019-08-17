@@ -14,24 +14,17 @@
 class Solution {
 public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
-        ListNode* p = headA;
-	    ListNode* q = headB;
-	    if (p == NULL || q == NULL) {
-	    	return NULL;
-	    }
-	    while (p != q) {
-	    	if (p) {
-                p = p->next;
-            } else {
-                p = headB;
-            }
-            if (q) {
-                q = q->next;
-            } else {
-                q = headA;
-            }
-	    }
-	    return p;
+        // suppose listA = A + (intersection), listB = B + (intersecton)
+        // consider listC = A + (intersection) + B + (intersection), and
+        // listD = B + (intersection) + A + (intersection)
+        // they have same length ==> one while loop can solve the problem
+        if (!headA || !headB) return nullptr;
+        ListNode* a = headA, *b = headB;
+        while (a != b) {
+            a = a ? a->next : headB;
+            b = b ? b->next : headA;
+        }
+        return a;
     }
 };
 

@@ -157,5 +157,6 @@ ___
 + [`1093-sampleStats`](./src/1093.sampleStats.cpp)
 + [`1094-carPooling`](./src/1094.carPooling.cpp)
 + [`1095-findInMountainArray`](./src/1095.findInMountainArray.cpp)
++ [`1146-snapshot-array`](./src/1146.snapshot-array.cpp)
 
 ### CopyRight All Rights Reserved.
