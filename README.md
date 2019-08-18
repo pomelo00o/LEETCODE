@@ -8,7 +8,6 @@ ___
 ___
 ## <a name = "solution" /> Solution
 + [`1-twoSum`](./src/1.twoSum.cpp)
-+ [`2-addTwoNumbers`](./src/2.addTwoNumbers.cpp)
 + [`2-add-two-numbers`](./src/2.add-two-numbers.cpp)
 + [`3-lengthOfLongestSubstring`](./src/3.lengthOfLongestSubstring.cpp)
 + [`4-median-of-two-sorted-arrays`](./src/4.median-of-two-sorted-arrays.cpp)
