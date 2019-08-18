@@ -14,18 +14,15 @@
 class Solution {
 public:
     ListNode* deleteDuplicates(ListNode* head) {
-        if (!head || !(head->next)) return head;
-        auto val = head->val;
-        auto p = head->next;
-        if (p->val != val) {
-            head->next = deleteDuplicates(p);
-            return head;
-        } else {
-            while (p->val == val) {
-                p = p->next;
+        if (!head) return head;
+        if (head->next && head->val == head->next->val) {
+            while (head->next && head->val == head->next->val) {
+                head = head->next;
             }
-            return deleteDuplicates(p);
+            return deleteDuplicates(head->next);
         }
+        head->next = deleteDuplicates(head->next);
+        return head;
     }
 };
 

@@ -14,39 +14,34 @@
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        ListNode* head = new ListNode(-1);
-        stack<int> m;
-        stack<int> n;
+        stack<int> s1, s2;
         while (l1) {
-            m.push(l1->val);
+            s1.push(l1->val);
             l1 = l1->next;
         }
         while (l2) {
-            n.push(l2->val);
+            s2.push(l2->val);
             l2 = l2->next;
         }
-        auto carry = 0;
-        while (!m.empty() || !n.empty() || carry) {
-            int a, b = 0;
-            if (m.empty()) {
-                a = 0;
-            } else {
-                a = m.top();
-                m.pop();
+        int sum = 0, carry = 0;
+        ListNode *res = new ListNode(0);
+        while (!s1.empty() || !s2.empty()) {
+            if (!s1.empty()) {
+                sum += s1.top();
+                s1.pop();
             }
-            if (n.empty()) {
-                b = 0;
-            } else {
-                b = n.top();
-                n.pop();
+            if (!s2.empty()) {
+                sum += s2.top();
+                s2.pop();
             }
-            auto sum = a + b + carry;
             carry = sum / 10;
-            ListNode* nextNode = new ListNode(sum % 10);
-            nextNode->next = head->next;
-            head->next = nextNode;
+            res->val = sum % 10;
+            ListNode *head = new ListNode(carry);
+            head->next = res;
+            res = head;
+            sum /= 10;
         }
-        return head->next;
+        return res->val == 0 ? res->next : res;
     }
 };
 

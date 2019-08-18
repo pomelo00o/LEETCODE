@@ -9,6 +9,7 @@ ___
 ## <a name = "solution" /> Solution
 + [`1-twoSum`](./src/1.twoSum.cpp)
 + [`2-addTwoNumbers`](./src/2.addTwoNumbers.cpp)
++ [`2-add-two-numbers`](./src/2.add-two-numbers.cpp)
 + [`3-lengthOfLongestSubstring`](./src/3.lengthOfLongestSubstring.cpp)
 + [`4-median-of-two-sorted-arrays`](./src/4.median-of-two-sorted-arrays.cpp)
 + [`5-longestPalindrome`](./src/5.longestPalindrome.cpp)
@@ -57,6 +58,7 @@ ___
 + [`69-mySqrt`](./src/69.mySqrt.cpp)
 + [`70-climbStairs`](./src/70.climbStairs.cpp)
 + [`74-search-a-2-d-matrix`](./src/74.search-a-2-d-matrix.cpp)
++ [`76-minimum-window-substring`](./src/76.minimum-window-substring.cpp)
 + [`82-remove-duplicates-from-sorted-list-ii`](./src/82.remove-duplicates-from-sorted-list-ii.cpp)
 + [`83-deleteDuplicates`](./src/83.deleteDuplicates.cpp)
 + [`92-reverse-linked-list-ii`](./src/92.reverse-linked-list-ii.cpp)
