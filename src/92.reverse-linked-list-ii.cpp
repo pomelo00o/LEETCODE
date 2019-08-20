@@ -14,21 +14,26 @@
 class Solution {
 public:
     ListNode* reverseBetween(ListNode* head, int m, int n) {
-        ListNode dummy(0);
-        dummy.next = head;
-        ListNode* slow = &dummy;
-        for (int i = 0; i < m - 1; ++i) {
+        // 1 2 3 4 5
+        // s f t x y
+        // basic idea is to loop n - m times
+        // within each iteration: put t between s and f
+        // f.next = f.next.next
+        // s.next = t
+        // t.next = s.next
+        ListNode *dummy = new ListNode(-1), *slow = dummy;
+        dummy->next = head;
+        for (int i = 1; i < m; ++i) {
             slow = slow->next;
         }
         ListNode* fast = slow->next;
-        ListNode* pre;
-        for (int i = 0; i < n - m; ++i) {
+        for (int j = m; j < n; ++j) {
             ListNode* tmp = fast->next;
             fast->next = fast->next->next;
             tmp->next = slow->next;
             slow->next = tmp;
         }
-        return dummy.next;
+        return dummy->next;
     }
 };
 

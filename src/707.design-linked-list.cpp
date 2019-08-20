@@ -3,83 +3,70 @@
  *
  * [707] Design Linked List
  */
-class Node {
-public:
-    int val;
-    Node* next;
-
-    Node(int val) {
-        this->val = val;
-        next = nullptr;
-    }
-};
 class MyLinkedList {
+private:
+    struct Node {
+        int val;
+        Node* next;
+        Node(int v, Node* n): val(v), next(n) {}
+    };
+    Node* head, *tail;
+    int size;
+    
 public:
     /** Initialize your data structure here. */
-    int size = 0;
-    Node* head = new Node(0);
     MyLinkedList() {
-        
+        head = nullptr;
+        size = 0;
     }
     
     /** Get the value of the index-th node in the linked list. If the index is invalid, return -1. */
     int get(int index) {
-        if (index >= size) return -1;
-        Node* tmp = head->next;
-        while (index) {
-            tmp = tmp->next;
-            index -= 1;
-        }
-        return tmp->val;
+        if (index < 0 || index >= size) return -1;
+        Node* curr = head;
+        for (int i = 0; i < index; ++i) curr = curr->next;
+        return curr->val;
     }
     
     /** Add a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list. */
     void addAtHead(int val) {
-        Node* prevHead = head->next;
-        Node* newHead = new Node(val);
-        newHead->next = prevHead;
-        head->next = newHead;
-        size += 1;
+        size++;
+        Node *n = new Node(val, head);
+        head = n;
     }
     
     /** Append a node of value val to the last element of the linked list. */
     void addAtTail(int val) {
-        Node* tmp = head;
-        while (tmp && tmp->next) {
-            tmp = tmp->next;
-        }
-        Node* tail = new Node(val);
-        tmp->next = tail;
-        tail->next = nullptr;
-        size += 1;
+        size++;
+        Node* curr = head;
+        while (curr->next) curr = curr->next;
+        Node *n = new Node(val, nullptr);
+        curr->next = n;
     }
     
     /** Add a node of value val before the index-th node in the linked list. If index equals to the length of linked list, the node will be appended to the end of linked list. If index is greater than the length, the node will not be inserted. */
     void addAtIndex(int index, int val) {
-        if (index > size) return;
-        Node* prev = head;
-        while (index) {
-            prev = prev->next;
-            index -= 1;
-        }
-        Node* node = new Node(val);
-        Node* nextNode = prev->next;
-        prev->next = node;
-        prev->next->next = nextNode;
-        size += 1;
+        if (index < 0 || index > size) return;
+        if (index == 0) {addAtHead(val); return;}
+        size++;
+        Node* curr = head;
+        for (int i = 1; i < index; ++i) curr = curr->next;
+        Node* n = new Node(val, curr->next);
+        curr->next = n;
     }
     
     /** Delete the index-th node in the linked list, if the index is valid. */
     void deleteAtIndex(int index) {
-        if (index > size) return;
-        Node* prev = head;
-        while (index) {
-            prev = prev->next;
-            index -= 1;
+        if (index < 0 || index >= size) return;
+        if (index == 0) {
+            head = head->next;
+            size--;
+            return;
         }
-        Node* curr = prev->next;
-        prev->next = prev->next->next;
-        size -= 1;
+        size--;
+        Node* curr = head;
+        for (int i = 1; i < index; ++i) curr = curr->next;
+        curr->next = curr->next->next;
     }
 };
 
@@ -92,4 +79,3 @@ public:
  * obj->addAtIndex(index,val);
  * obj->deleteAtIndex(index);
  */
-
