@@ -8,39 +8,37 @@ private:
     struct KVPair {
         int key;
         int val;
-        KVPair(int key, int val): key(key), val(val) {}
+        KVPair(int k, int v): key(k), val(v) {};
     };
-
-    list<KVPair> lru_list;
-    unordered_map<int, list<KVPair>::iterator> mp;
     int cap;
+    list<KVPair> lru_list;
+    unordered_map<int, list<KVPair>::iterator> umap;
 public:
     LRUCache(int capacity) {
         cap = capacity;
     }
     
     int get(int key) {
-        if (mp.find(key) == mp.end()) {
-            return -1;
-        }
-        auto iter = mp[key];
-        auto res = *iter;
+        if (umap.find(key) == umap.end()) return -1;
+        list<KVPair>::iterator iter = umap[key];
+        KVPair kv = *iter;
         lru_list.erase(iter);
-        lru_list.push_front(res);
-        mp[key] = lru_list.begin();
-        return res.val;
+        lru_list.push_front(kv);
+        umap[key] = lru_list.begin();
+        return kv.val;
     }
     
     void put(int key, int value) {
         if (get(key) != -1) {
-            (*mp[key]).val = value;
+            (*umap[key]).val = value;
             return;
         }
-        KVPair tmp(key, value);
-        lru_list.push_front(tmp);
-        mp[key] = lru_list.begin();
+        KVPair kv(key, value);
+        lru_list.push_front(kv);
+        umap[key] = lru_list.begin();
         while (lru_list.size() > cap) {
-            mp.erase(lru_list.back().key);
+            int k = lru_list.back().key;
+            umap.erase(k);
             lru_list.pop_back();
         }
     }

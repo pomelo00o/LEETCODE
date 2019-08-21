@@ -15,20 +15,26 @@ class Solution {
 public:
     ListNode* rotateRight(ListNode* head, int k) {
         if (!head) return head;
-        ListNode* tail = head;
-        int len = 0;
-        while (tail) {
-            tail = tail->next;
-            len += 1;
+        ListNode* dummy = new ListNode(-1), *curr = dummy;
+        dummy->next = head;
+        int cnt = 0;
+        // to avoid TLE, reduce k to be k % n
+        while (curr->next) {
+            cnt++;
+            curr = curr->next;
         }
-        tail->next = head;
-        k = k % len;
-        for (int i = 0; i < len - k; ++i) {
-            tail = tail->next;
+        k %= cnt;
+        curr = dummy;
+        for (int i = 0; i < k; ++i) {
+            ListNode* sec_tail = curr;
+            while (sec_tail && sec_tail->next && sec_tail->next->next)
+                sec_tail = sec_tail->next;
+            ListNode* tail = sec_tail->next;
+            sec_tail->next = nullptr;
+            tail->next = curr->next;
+            curr->next = tail;
         }
-        auto new_head = tail->next;
-        tail->next = nullptr;
-        return new_head;
+        return dummy->next;
     }
 };
 
