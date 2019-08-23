@@ -14,25 +14,24 @@
  */
 class Solution {
 public:
+    // basic idea is to do a dfs
+    // visit(left) --> visit(right)
     bool leafSimilar(TreeNode* root1, TreeNode* root2) {
-        string t1, t2;
-        DFS(root1, t1);
-        DFS(root2, t2);
-        return t1 == t2;
+        string s1, s2;
+        dfs(root1, s1);
+        dfs(root2, s2);
+        return s1 == s2;
     }
 
-    void DFS(TreeNode* root, string& s) {
-        if (!root) return;
-        if (isLeaf(root)) {
-            s += "#" + to_string(root->val);
-        } else {
-            DFS(root->left, s);
-            DFS(root->right, s);
+    void dfs(TreeNode* n, string& s) {
+        if (!n) return;
+        if (!(n->left) && !(n->right)) {
+            s += '@' + to_string(n->val);
+            // @ is used to distinguish (1, 2, 3) from (12, 3)
+            return;
         }
-    }
-
-    bool isLeaf(TreeNode* root) {
-        return !root->left && !root->right;
+        dfs(n->left, s);
+        dfs(n->right, s);
     }
 };
 

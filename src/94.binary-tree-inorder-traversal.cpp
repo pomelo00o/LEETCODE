@@ -12,46 +12,44 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-// RECURSIVE WAY
-// class Solution {
-// public:
-//     vector<int> inorderTraversal(TreeNode* root) {
-//         vector<int> res;
-//         inorderHelper(root, res);
-//         return res;
-//     }
 
-//     void inorderHelper(TreeNode* root, vector<int>& res) {
-//         if (!root) return;
-//         inorderHelper(root->left, res);
-//         res.push_back(root->val);
-//         inorderHelper(root->right, res);
-//     }
-// };
-
-// ITERATIVE WAY
+// recursive way
 class Solution {
 public:
     vector<int> inorderTraversal(TreeNode* root) {
         vector<int> res;
-        if (!root) return res;
-        stack<TreeNode*> stk;
-        auto curr = root;
-        pushLeftNode(curr, stk);
-        while (!stk.empty()) {
-            auto tmp =  stk.top();
-            stk.pop();
-            res.push_back(tmp->val);
-            pushLeftNode(tmp->right, stk);
-        }
+        traverse(root, res);
         return res;
     }
 
-    void pushLeftNode(TreeNode* root, stack<TreeNode*>& stk) {
-        while (root) {
-            stk.push(root);
-            root = root->left;
-        }
+    void traverse(TreeNode* root, vector<int>& res) {
+        if (!root) return;
+        if (root->left)
+            traverse(root->left, res);
+        res.push_back(root->val);
+        if (root->right)
+            traverse(root->right, res);
     }
 };
 
+// iterative way
+class Solution {
+public:
+    vector<int> inorderTraversal(TreeNode* root) {
+        if (!root) return {};
+        vector<int> res;
+        stack<TreeNode*> stk;
+        TreeNode* curr = root;
+        while (curr || !stk.empty()) {
+            while (curr) {
+                stk.push(curr);
+                curr = curr->left;
+            }
+            curr = stk.top();
+            stk.pop();
+            res.push_back(curr->val);
+            curr = curr->right;
+        }
+        return res;
+    }
+};
