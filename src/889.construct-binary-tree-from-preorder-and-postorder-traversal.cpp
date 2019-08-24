@@ -18,20 +18,19 @@ public:
         return helper(pre, post, 0, pre.size() - 1, 0, post.size() - 1);
     }
 
-    TreeNode* helper(vector<int>& pre, vector<int>& post, int s1, int e1, int s2, int e2) {
-        if (s1 > e1 || s2 > e2) return nullptr;
-        TreeNode* root = new TreeNode(pre[s1]);
-        if (s1 == e1) return root;
-        int m1 = s1 + 1;
-        int m2 = s2;
-        int set1 = 0, set2 = 0;
-        while (set1 == 0 || set1 != set2) {
-            set1 |= 1 << pre[m1++];
-            set2 |= 1 << post[m2++];
+    TreeNode* helper(vector<int>& pre, vector<int>& post, int pres, int pree, int posts, int poste) {
+        if (pres > pree || posts > poste) return nullptr;
+        TreeNode* n = new TreeNode(pre[pres]);
+        if (pres == pree) return n;
+        int pos = 0;
+        for (pos = posts; pos <= poste; ++pos) {
+            if (post[pos] == pre[pres + 1]) break;
         }
-        root->left = helper(pre, post, s1 + 1, m1 - 1, s2, m2 - 1);
-        root->right = helper(pre, post, m1, e1, m2, e2);
-        return root;
+        // left subtree: len_left = pos - posts + 1
+        // right subtree: len_right = poste - posts - len_left = poste - posts - pos + posts - 1 = poste - pos - 1
+        n->left = helper(pre, post, pres + 1, pos - posts + 1 + pres, posts, pos);
+        n->right = helper(pre, post, pres + 1 + pos - posts + 1, pree, pos + 1, poste - 1);
+        return n;
     }
 };
 
