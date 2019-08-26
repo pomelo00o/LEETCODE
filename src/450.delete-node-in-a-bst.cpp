@@ -20,23 +20,17 @@ public:
             root->left = deleteNode(root->left, key);
         else if (root->val < key) 
             root->right = deleteNode(root->right, key);
-        else {
+        if (root->val == key) {
             if (!root->right) {
-                TreeNode* left = root->left;
-                delete root;
-                return left;
+                return root->left;
             } else {
-                TreeNode* min = findMinNode(root->right);
-                root->val = min->val;
-                root->right = deleteNode(root->right, root->val);
+                TreeNode* right = root->right;
+                while (right->left) right = right->left;
+                swap(root->val, right->val);
+                root->right = deleteNode(root->right, key);
             }
         }
         return root;
-    }
-
-    TreeNode* findMinNode(TreeNode* node) {
-        while (node->left) node = node->left;
-        return node;
     }
 };
 

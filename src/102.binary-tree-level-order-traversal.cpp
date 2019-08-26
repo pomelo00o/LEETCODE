@@ -16,16 +16,17 @@ class Solution {
 public:
     vector<vector<int>> levelOrder(TreeNode* root) {
         vector<vector<int>> res;
-        helper(root, 0, res);
+        int depth = 0;
+        bfs(res, depth, root);
         return res;
     }
 
-    void helper(TreeNode* root, int depth, vector<vector<int>>& res) {
+    void bfs(vector<vector<int>>& res, int depth, TreeNode* root) {
         if (!root) return;
         if (res.size() == depth) res.push_back(vector<int>());
         res[depth].push_back(root->val);
-        helper(root->left, depth + 1, res);
-        helper(root->right, depth + 1, res);
+        bfs(res, depth + 1, root->left);
+        bfs(res, depth + 1, root->right);
     }
 };
 
