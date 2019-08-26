@@ -22,15 +22,15 @@ public:
     
     /** @return the next smallest number */
     int next() {
-        TreeNode* tmp = stk.top();
+        TreeNode* n = stk.top();
         stk.pop();
-        pushLeft(tmp->right);
-        return tmp->val;
+        pushLeft(n->right);
+        return n->val;
     }
     
     /** @return whether we have a next smallest number */
     bool hasNext() {
-        return !stk.empty();
+        return !(stk.empty());
     }
 
     void pushLeft(TreeNode* root) {

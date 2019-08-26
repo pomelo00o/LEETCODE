@@ -157,6 +157,7 @@ ___
 + [`973-k-closest-points-to-origin`](./src/973.k-closest-points-to-origin.cpp)
 + [`986-interval-list-intersections`](./src/986.interval-list-intersections.cpp)
 + [`987-vertical-order-traversal-of-a-binary-tree`](./src/987.vertical-order-traversal-of-a-binary-tree.cpp)
++ [`1008-construct-binary-search-tree-from-preorder-traversal`](./src/1008.construct-binary-search-tree-from-preorder-traversal.cpp)
 + [`1011-capacity-to-ship-packages-within-d-days`](./src/1011.capacity-to-ship-packages-within-d-days.cpp)
 + [`1046-last-stone-weight`](./src/1046.last-stone-weight.cpp)
 + [`1054-distant-barcodes`](./src/1054.distant-barcodes.cpp)
