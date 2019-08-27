@@ -15,44 +15,16 @@
 class Solution {
 public:
     int widthOfBinaryTree(TreeNode* root) {
-        if (!root) return 0;
-        vector<TreeNode*> vec;
-        vec.push_back(root);
-        int res = 1;
-        while (!vec.empty()) {
-            vector<TreeNode*> next;
-            next.clear();
-            for (int i = 0; i < vec.size(); ++i) {
-                auto node = vec[i];
-                if (!node) {
-                    next.push_back(nullptr);
-                    next.push_back(nullptr);
-                } else {
-                    next.push_back(node->left);
-                    next.push_back(node->right);
-                }
-            }
-            next = valid(next);
-            res = max(res, (int)(next.size()));
-            vec.assign(next.begin(), next.end());
-        }
-        return res;
+        // vec[level] : <start, end>
+        // length = vec[level].second - vec[level].first + 1
+        return dfs(root, 0, 1, vector<pair<int, int>>() = {});
     }
 
-    vector<TreeNode*> valid(vector<TreeNode*>& next) {
-        vector<TreeNode*> n;
-        if (next.empty()) return n;
-        int left = 0;
-        int right = next.size() - 1;
-        while (left <= right && !next[left]) 
-            left += 1;
-        while (left <= right && !next[right]) 
-            right -= 1;
-        for (int i = left; i <= right; ++i) {
-            auto tmp = next[i];
-            n.push_back(tmp);
-        }
-        return n;
+    int dfs(TreeNode* root, int level, unsigned int order, vector<pair<int, int>>& vec) {
+        if (!root) return 0;
+        if (vec.size() == level) vec.push_back({order, order});
+        else vec[level].second = order;
+        return max({vec[level].second - vec[level].first + 1, dfs(root->left, level + 1, 2 * order, vec), dfs(root->right, level + 1, 2 * order + 1, vec)});
     }
 };
 

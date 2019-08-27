@@ -15,24 +15,28 @@
 class Solution {
 public:
     vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
+        // a simple bfs
+        // initialize a queue with root node
+        // pop the front node and push its left and right nodes into the queue
+        // use a flag variable to indicate whether reverse is needed
+        if (!root) return {};
         vector<vector<int>> res;
-        if (!root) return res;
-        queue<TreeNode*> nodes;
-        nodes.push(root);
-        bool needReverse = false;
-        while (!nodes.empty()) {
-            int size = nodes.size();
-            vector<int> row(size);
-            for (int i = 0; i < size; ++i) {
-                auto node = nodes.front();
-                nodes.pop();
-                int idx = needReverse ? (size - 1 - i) : i;
-                row[idx] = node->val;
-                if (node->left) nodes.push(node->left);
-                if (node->right) nodes.push(node->right);
+        queue<TreeNode*> q;
+        q.push(root);
+        bool reverse = false;
+        while (!q.empty()) {
+            int sz = q.size();
+            vector<int> curr(sz);
+            for (int i = 0; i < sz; ++i) {
+                TreeNode* tmp = q.front();
+                q.pop();
+                if (!reverse) curr[i] = tmp->val;
+                else curr[sz - i - 1] = tmp->val;
+                if (tmp->left) q.push(tmp->left);
+                if (tmp->right) q.push(tmp->right);
             }
-            needReverse = !needReverse;
-            res.push_back(row);
+            reverse = !reverse;
+            res.push_back(curr);
         }
         return res;
     }

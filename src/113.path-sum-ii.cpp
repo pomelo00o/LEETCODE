@@ -15,21 +15,22 @@
 class Solution {
 public:
     vector<vector<int>> pathSum(TreeNode* root, int sum) {
-        vector<vector<int>> paths;
-        vector<int> path;
-        findPath(root, sum, paths, path);
-        return paths;
+        vector<vector<int>> res = {};
+        vector<int> curr = {};
+        dfs(root, sum, res, curr);
+        return res;
     }
 
-    void findPath(TreeNode* root, int sum, vector<vector<int>>& paths, vector<int>& path) {
+    void dfs(TreeNode* root, int target, vector<vector<int>>& res, vector<int>& curr) {
         if (!root) return;
-        path.push_back(root->val);
-        if (root->val == sum && !root->left && !root->right) {
-            paths.push_back(path);
-        }
-        findPath(root->left, sum - root->val, paths, path);
-        findPath(root->right, sum - root->val, paths, path);
-        path.pop_back();
+        curr.push_back(root->val);
+        if (root->val == target && !root->left && !root->right) 
+            res.push_back(curr);
+        if (root->left)
+            dfs(root->left, target - root->val, res, curr);
+        if (root->right)
+            dfs(root->right, target - root->val, res, curr);
+        curr.pop_back();
     }
 };
 
