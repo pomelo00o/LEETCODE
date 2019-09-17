@@ -46,6 +46,7 @@ ___
 + [`38-count-and-say`](./src/38.count-and-say.cpp)
 + [`39-combination-sum`](./src/39.combination-sum.cpp)
 + [`40-combination-sum-ii`](./src/40.combination-sum-ii.cpp)
++ [`42-trapping-rain-water`](./src/42.trapping-rain-water.cpp)
 + [`46-permute`](./src/46.permute.cpp)
 + [`48-rotate`](./src/48.rotate.cpp)
 + [`49-groupAnagram`](./src/49.groupAnagrams.js)
