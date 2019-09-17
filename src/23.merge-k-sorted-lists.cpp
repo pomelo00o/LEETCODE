@@ -17,13 +17,13 @@ public:
         return helper(lists, 0, lists.size() - 1);
     }
 
-    ListNode* helper(vector<ListNode*>& lists, int start, int end) {
-        if (start > end) return nullptr;
-        if (start == end) return lists[start];
-        int mid = (start + end) / 2;
-        ListNode* left = helper(lists, start, mid);
-        ListNode* right = helper(lists, mid + 1, end);
-        return merge(left, right);
+    ListNode* helper(vector<ListNode*>& lists, int s, int e) {
+        if (s > e) return nullptr;
+        if (s == e) return lists[s];
+        int mid = (s + e) / 2;
+        ListNode* l1 = helper(lists, s, mid);
+        ListNode* l2 = helper(lists, mid + 1, e);
+        return merge(l1, l2);
     }
 
     ListNode* merge(ListNode* l1, ListNode* l2) {
