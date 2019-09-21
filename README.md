@@ -85,7 +85,6 @@ ___
 + [`119-getRow`](./src/119.getRow.cpp)
 + [`120-minimumTotal`](./src/120.minimumTotal.cpp)
 + [`121-best-time-to-buy-and-sell-stock`](./src/121.best-time-to-buy-and-sell-stock.cpp)
-+ [`121-maxProfit`](./src/121.maxProfit.cpp)
 + [`129-sum-root-to-leaf-numbers`](./src/129.sum-root-to-leaf-numbers.cpp)
 + [`136-singleNumber`](./src/136.singleNumber.cpp)
 + [`141-hasCycle`](./src/141.hasCycle.cpp)
@@ -189,5 +188,7 @@ ___
 + [`1095-findInMountainArray`](./src/1095.findInMountainArray.cpp)
 + [`1123-lowest-common-ancestor-of-deepest-leaves`](./src/1123.lowest-common-ancestor-of-deepest-leaves.cpp)
 + [`1146-snapshot-array`](./src/1146.snapshot-array.cpp)
++ [`1189-maximum-num-of-balloons`](./src/1189.maximum-num-of-balloons.cpp)
++ [`1190-reverse-substring-between-parentheses`](./src/1190.reverse-substring-between-parentheses.cpp)
 
 ### CopyRight All Rights Reserved.
