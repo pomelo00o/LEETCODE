@@ -6,21 +6,23 @@
 class Solution {
 public:
     int findCircleNum(vector<vector<int>>& M) {
-        int res = 0;
-        vector<bool> visited(M.size(), false);
-        for (int i = 0; i < M.size(); ++i) {
-            if (visited[i]) continue;
-            helper(M, visited, i);
-            res += 1;
+        int cnt = 0;
+        int N = M.size();
+        vector<bool> visited(N, false);
+        for (int i = 0; i < N; ++i) {
+            if (visited[i] == false) {
+                dfs(M, visited, i);
+                cnt ++;
+            }
         }
-        return res;
+        return cnt;
     }
 
-    void helper(vector<vector<int>>& M, vector<bool>& visited, int k) {
-        visited[k] = true;
-        for (int i = 0; i < M.size(); ++i) {
-            if (M[k][i] == 0 || visited[i]) continue;
-            helper(M, visited, i);
+    void dfs(vector<vector<int>>& M, vector<bool>& visited, int i) {
+        visited[i] = true;
+        for (int j = 0; j < M[0].size(); ++j) {
+            if (M[i][j] == 0 || visited[j] == true) continue;
+            dfs(M, visited, j);
         }
     }
 };
