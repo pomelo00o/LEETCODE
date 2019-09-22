@@ -6,26 +6,24 @@
 class Solution {
 public:
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
-        vector<vector<int>> res;
-        int start = 0;
-        vector<int> vec;
-        helper(candidates, target, start, vec, res);
-        return res;
+        vector<vector<int>> combinations;
+        vector<int> curr;
+        helper(candidates, target, 0, combinations, curr);
+        return combinations;
     }
 
-    void helper(vector<int>& candidates, int target, int start, vector<int>& vec, vector<vector<int>>& res) {
+    void helper(vector<int>& candidates, int target, int start, vector<vector<int>>& combinations, vector<int>& curr) {
         if (target < 0) {
             return;
         }
         if (target == 0) {
-            res.push_back(vec);
+            combinations.push_back(curr);
             return;
         }
         for (int i = start; i < candidates.size(); ++i) {
-            int curr = candidates[i];
-            vec.push_back(curr);
-            helper(candidates, target - curr, i, vec, res);
-            vec.pop_back();
+            curr.push_back(candidates[i]);
+            helper(candidates, target - candidates[i], i, combinations, curr);
+            curr.pop_back();
         }
     }
 };

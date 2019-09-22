@@ -6,26 +6,31 @@
 class Solution {
 public:
     vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
-        vector<vector<int>> res;
-        vector<int> vec;
-        int start = 0;
+        vector<vector<int>> combinations;
+        int sz = candidates.size();
+        vector<bool> visited(sz, false);
+        vector<int> curr;
         sort(candidates.begin(), candidates.end());
-        helper(candidates, target, start, vec, res);
-        return res;
+        backtrack(combinations, candidates, curr, visited, target, 0);
+        return combinations;
     }
 
-    void helper(vector<int> candidates, int target, int start, vector<int>& vec, vector<vector<int>>& res) {
-        if (target < 0) return;
+    void backtrack(vector<vector<int>>& combinations, vector<int>& candidates, vector<int>& curr, vector<bool>& visited, int target, int start) {
+        if (target < 0) {
+            return;
+        }
         if (target == 0) {
-            res.push_back(vec);
+            combinations.push_back(curr);
             return;
         }
         for (int i = start; i < candidates.size(); ++i) {
-            if (i > start && candidates[i] == candidates[i - 1]) continue;
-            int curr = candidates[i];
-            vec.push_back(curr);
-            helper(candidates, target - curr, i + 1, vec, res);
-            vec.pop_back();
+            if (visited[i] == true) continue;
+            if (i != 0 && candidates[i] == candidates[i - 1] && visited[i - 1] == false) continue;
+            curr.push_back(candidates[i]);
+            visited[i] = true;
+            backtrack(combinations, candidates, curr, visited, target - candidates[i], i + 1);
+            curr.pop_back();
+            visited[i] = false;
         }
     }
 };
