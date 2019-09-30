@@ -52,6 +52,10 @@ public:
     }
 
     void merge(ListNode* l1, ListNode* l2) {
+        // merge l1 and l2 one by one
+        // eg: l1: 1->2->3
+        //     l2: 5->4
+        // return: 1->5->2->4->3
         ListNode *dummy = new ListNode(0);
         ListNode *p = dummy;
         while (l1 || l2) {

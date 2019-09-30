@@ -15,22 +15,22 @@
 class Solution {
 public:
     TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
-        return helper(inorder, postorder, postorder.size() - 1, 0, inorder.size() - 1);
+        return in_post(inorder, postorder, 0, postorder.size() - 1, 0, inorder.size() - 1);
     }
 
-    TreeNode* helper(vector<int>& inorder, vector<int>& postorder, int ppos, int in_start, int in_end) {
-        if (ppos < 0 || in_start > in_end) return nullptr;
-        TreeNode* root = new TreeNode(postorder[ppos]);
-        int in_idx = 0;
-        for (int i = in_start; i <= in_end; ++i) {
-            if (inorder[i] == postorder[ppos]) {
-                in_idx = i;
+    TreeNode* in_post(vector<int>& in, vector<int>& post, int ps, int pe, int is, int ie) {
+        if (ps > pe || is > ie) return nullptr;
+        TreeNode* node = new TreeNode(post[pe]);
+        int pos = 0;
+        for (int i = is; i <= ie; ++i) {
+            if (in[i] == node->val) {
+                pos = i;
                 break;
             }
         }
-        root->left = helper(inorder, postorder, ppos - 1 - in_end + in_idx, in_start, in_idx - 1);
-        root->right = helper(inorder, postorder, ppos - 1, in_idx + 1, in_end);
-        return root;
+        node->left = in_post(in, post, ps, ps - 1 - is + pos, is, pos - 1);
+        node->right = in_post(in, post, pe + pos - ie, pe - 1, pos + 1, ie);
+        return node;
     }
 };
 

@@ -26,8 +26,7 @@ public:
     }
 
     ListNode* merge(ListNode* l1, ListNode* l2) {
-        ListNode* p = new ListNode(-1);
-        ListNode* dummy = p;
+        ListNode* dummy = new ListNode(-1), *p = dummy;
         while (l1 && l2) {
             if (l1->val < l2->val) {
                 p->next = l1;

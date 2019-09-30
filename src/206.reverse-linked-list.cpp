@@ -14,22 +14,22 @@
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        // recursive way
-        if (!head || !head->next) return head;
-        ListNode* n = reverseList(head->next);
-        head->next->next = head;
-        head->next = nullptr;
-        return n;
+        // recursive way;
+        // if (!head || !head->next) return head;
+        // ListNode* node = reverseList(head->next);
+        // head->next->next = head;
+        // head->next = nullptr;
+        // return node;
 
         // iterative way
-        ListNode* curr = nullptr;
+        ListNode* prev = nullptr;
         while (head) {
             ListNode* next = head->next;
-            head->next = curr;
-            curr = head;
+            head->next = prev;
+            prev = head;
             head = next;
         }
-        return curr;
+        return prev;
     }
 };
 

@@ -20,7 +20,7 @@ public:
     ListNode* helper(vector<ListNode*>& lists, int s, int e) {
         if (s > e) return nullptr;
         if (s == e) return lists[s];
-        int mid = (s + e) / 2;
+        int mid = s + (e - s) / 2;
         ListNode* l1 = helper(lists, s, mid);
         ListNode* l2 = helper(lists, mid + 1, e);
         return merge(l1, l2);

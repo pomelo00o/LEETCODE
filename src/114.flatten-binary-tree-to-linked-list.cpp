@@ -16,11 +16,18 @@ class Solution {
 public:
     void flatten(TreeNode* root) {
         if (!root) return;
+        
+        // flatten both sides into list
         flatten(root->left);
         flatten(root->right);
+
         TreeNode* tmp = root->right;
+
+        // append the original left tree to the root node
         root->right = root->left;
         root->left = nullptr;
+
+        // append the original right tree at the end
         while (root->right) {
             root = root->right;
         }

@@ -3,16 +3,19 @@
  *
  * [707] Design Linked List
  */
+struct Node {
+    int val;
+    Node* next;
+    Node(int v, Node* n) {
+        this->val = v;
+        this->next = n;
+    }
+};
+
 class MyLinkedList {
 private:
-    struct Node {
-        int val;
-        Node* next;
-        Node(int v, Node* n): val(v), next(n) {}
-    };
-    Node* head, *tail;
+    Node* head;
     int size;
-    
 public:
     /** Initialize your data structure here. */
     MyLinkedList() {
@@ -46,9 +49,21 @@ public:
     
     /** Add a node of value val before the index-th node in the linked list. If index equals to the length of linked list, the node will be appended to the end of linked list. If index is greater than the length, the node will not be inserted. */
     void addAtIndex(int index, int val) {
-        if (index < 0 || index > size) return;
-        if (index == 0) {addAtHead(val); return;}
-        size++;
+        // a test bug: if index < 0 ==> addAtHead(val)
+        if (index < 0) {
+            addAtHead(val);
+            return;
+        }
+        if (index > size) return;
+        if (index == 0) {
+            addAtHead(val);
+            return;
+        }
+        if (index == size) {
+            addAtTail(val);
+            return;
+        }
+        size ++;
         Node* curr = head;
         for (int i = 1; i < index; ++i) curr = curr->next;
         Node* n = new Node(val, curr->next);
@@ -58,12 +73,11 @@ public:
     /** Delete the index-th node in the linked list, if the index is valid. */
     void deleteAtIndex(int index) {
         if (index < 0 || index >= size) return;
+        size --;
         if (index == 0) {
             head = head->next;
-            size--;
             return;
         }
-        size--;
         Node* curr = head;
         for (int i = 1; i < index; ++i) curr = curr->next;
         curr->next = curr->next->next;

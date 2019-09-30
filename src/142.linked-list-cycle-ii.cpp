@@ -21,19 +21,21 @@ public:
         // second step is to put the walker back to head
         // set them to speed one
         // next time they will meet at the intersection point
-        if (!head || !(head->next)) return nullptr;
-        ListNode* slow = head;
-        ListNode* fast = head;
-        bool hasCycle = false;
-        while (fast && fast->next) {
+        if (!head || !head->next) return nullptr;
+        ListNode* slow = head, *fast = head;
+
+        bool isCyclic = false;
+        while (fast->next && fast->next->next) {
             slow = slow->next;
             fast = fast->next->next;
             if (slow == fast) {
-                hasCycle = true;
+                isCyclic = true;
                 break;
             }
         }
-        if (!hasCycle) return nullptr;
+
+        if (!isCyclic) return nullptr;
+
         slow = head;
         while (slow != fast) {
             slow = slow->next;

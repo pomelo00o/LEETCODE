@@ -15,22 +15,26 @@
 class Solution {
 public:
     TreeNode* constructFromPrePost(vector<int>& pre, vector<int>& post) {
-        return helper(pre, post, 0, pre.size() - 1, 0, post.size() - 1);
+        return pre_post(pre, post, 0, pre.size() - 1, 0, post.size() - 1);
     }
 
-    TreeNode* helper(vector<int>& pre, vector<int>& post, int pres, int pree, int posts, int poste) {
+    TreeNode* pre_post(vector<int>& pre, vector<int>& post, int pres, int pree, int posts, int poste) {
         if (pres > pree || posts > poste) return nullptr;
-        TreeNode* n = new TreeNode(pre[pres]);
-        if (pres == pree) return n;
+        TreeNode* node = new TreeNode(pre[pres]);
+        if (pres == pree) return node;
         int pos = 0;
-        for (pos = posts; pos <= poste; ++pos) {
-            if (post[pos] == pre[pres + 1]) break;
+        for (int i = posts; i <= poste; ++i) {
+            if (post[i] == pre[pres + 1]) {
+                pos = i;
+                break;
+            }
         }
+
         // left subtree: len_left = pos - posts + 1
-        // right subtree: len_right = poste - posts - len_left = poste - posts - pos + posts - 1 = poste - pos - 1
-        n->left = helper(pre, post, pres + 1, pos - posts + 1 + pres, posts, pos);
-        n->right = helper(pre, post, pres + 1 + pos - posts + 1, pree, pos + 1, poste - 1);
-        return n;
+        // right subtree: len_right = poste - pos - 1
+        node->left = pre_post(pre, post, pres + 1, pos - posts + 1 + pres, posts, pos);
+        node->right = pre_post(pre, post, pree + pos - poste + 2, pree, pos + 1, poste - 1);
+        return node;
     }
 };
 

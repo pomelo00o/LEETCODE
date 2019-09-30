@@ -14,17 +14,17 @@
 class Solution {
 public:
     bool isPalindrome(ListNode* head) {
-        ListNode* curr = head;
-        stack<int> stk;
-        while (curr) {
-            stk.push(curr->val);
+        ListNode* dummy = new ListNode(-1), *curr = dummy;
+        curr->next = head;
+        stack<int> st;
+        while (curr->next) {
+            st.push(curr->next->val);
             curr = curr->next;
         }
-        while (head) {
-            int v = stk.top();
-            stk.pop();
-            if (v != head->val)
-                return false;
+        while (!st.empty()) {
+            int val = st.top();
+            st.pop();
+            if (val != head->val) return false;
             head = head->next;
         }
         return true;

@@ -25,10 +25,12 @@ public:
         }
         k %= cnt;
         curr = dummy;
+
         for (int i = 0; i < k; ++i) {
             ListNode* sec_tail = curr;
-            while (sec_tail && sec_tail->next && sec_tail->next->next)
+            while (sec_tail && sec_tail->next && sec_tail->next->next) {
                 sec_tail = sec_tail->next;
+            }
             ListNode* tail = sec_tail->next;
             sec_tail->next = nullptr;
             tail->next = curr->next;
