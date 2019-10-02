@@ -8,7 +8,10 @@ private:
     struct KVPair {
         int key;
         int val;
-        KVPair(int k, int v): key(k), val(v) {};
+        KVPair(int k, int v) {
+            this->key = k;
+            this->val = v;
+        }
     };
     int cap;
     list<KVPair> lru_list;

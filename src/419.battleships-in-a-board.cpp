@@ -4,37 +4,25 @@
  * [419] Battleships in a Board
  */
 class Solution {
+private:
+    bool checkUpLeft(vector<vector<char>>& board, int r, int c) {
+        if (r > 0 && board[r - 1][c] == 'X') return false;
+        if (c > 0 && board[r][c - 1] == 'X') return false;
+        return true;
+    }
 public:
     int countBattleships(vector<vector<char>>& board) {
         if (board.empty() || board[0].empty()) return 0;
-        int res = 0, m = board.size(), n = board[0].size();
-        vector<vector<bool>> visited(m, vector<bool>(n, false));
-        vector<pair<int, int>> dirs;
-        dirs.push_back(make_pair(0, 1));
-        dirs.push_back(make_pair(0, -1));
-        dirs.push_back(make_pair(1, 0));
-        dirs.push_back(make_pair(-1, 0));
+        int m = board.size(), n = board[0].size();
+        int cnt = 0;
         for (int i = 0; i < m; ++i) {
             for (int j = 0; j < n; ++j) {
-                if (board[i][j] == 'X' && !visited[i][j]) {
-                    res += 1;
-                    queue<pair<int, int>> q;
-                    q.push(make_pair(i, j));
-                    while (!q.empty()) {
-                        auto curr = q.front();
-                        q.pop();
-                        visited[curr.first][curr.second] = true;
-                        for (auto dir : dirs) {
-                            int x = curr.first + dir.first;
-                            int y = curr.second + dir.second;
-                            if (x < 0 || x >= m || y < 0 || y >= n || visited[x][y] || board[x][y] == '.') continue;
-                            q.push({x, y});
-                        }
-                    }
+                if (board[i][j] == 'X' && checkUpLeft(board, i, j) == true) {
+                    cnt ++;
                 }
             }
         }
-        return res;
+        return cnt;
     }
 };
 

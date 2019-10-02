@@ -12,37 +12,37 @@
  * };
  */
 class Solution {
-public:
-    ListNode* mergeKLists(vector<ListNode*>& lists) {
-        return helper(lists, 0, lists.size() - 1);
+private:
+    ListNode* helper(vector<ListNode*>& lists, int left, int right) {
+        if (left > right) return nullptr;
+        if (left == right) return lists[left];
+        int mid = left + (right - left) / 2;
+        ListNode* l = helper(lists, 0, mid);
+        ListNode* r = helper(lists, mid + 1, right);
+        return merge(l, r);
     }
 
-    ListNode* helper(vector<ListNode*>& lists, int s, int e) {
-        if (s > e) return nullptr;
-        if (s == e) return lists[s];
-        int mid = s + (e - s) / 2;
-        ListNode* l1 = helper(lists, s, mid);
-        ListNode* l2 = helper(lists, mid + 1, e);
-        return merge(l1, l2);
-    }
-
-    ListNode* merge(ListNode* l1, ListNode* l2) {
-        if (!l1) return l2;
-        if (!l2) return l1;
+    ListNode* merge(ListNode* l, ListNode* r) {
+        if (!l) return r;
+        if (!r) return l;
         ListNode* dummy = new ListNode(-1), *curr = dummy;
-        while (l1 && l2) {
-            if (l1->val < l2->val) {
-                curr->next = l1;
-                l1 = l1->next;
+        while (l && r) {
+            if (l->val < r->val) {
+                curr->next = l;
+                l = l->next;
             } else {
-                curr->next = l2;
-                l2 = l2->next;
+                curr->next = r;
+                r = r->next;
             }
             curr = curr->next;
         }
-        if (!l1) curr->next = l2;
-        if (!l2) curr->next = l1;
+        if (!l) curr->next = r;
+        if (!r) curr->next = l;
         return dummy->next;
+    }
+public:
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+        return helper(lists, 0, lists.size() - 1);
     }
 };
 

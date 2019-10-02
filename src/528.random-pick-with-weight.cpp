@@ -29,6 +29,9 @@ public:
         // an alternative way is to use upper_bound(accu_wight.begin(), accu_weight.end(), randIdx)
         return right;
     }
+
+    // Tips: lower_bound returns n >= target
+    //       upper_bound returns n > target 
 };
 
 /**
