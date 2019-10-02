@@ -53,6 +53,7 @@ ___
 + [`48-rotate`](./src/48.rotate.cpp)
 + [`49-groupAnagram`](./src/49.groupAnagrams.js)
 + [`50-pow-x-n`](./src/50.pow-x-n.cpp)
++ [`51-n-queens`](./src/51.n-queens.cpp)
 + [`53-maximum-subarray`](./src/53.maximum-subarray.cpp)
 + [`53-maxSubArray`](./src/53.maxSubArray.cpp)
 + [`56-merge-intervals`](./src/56.merge-intervals.cpp)
