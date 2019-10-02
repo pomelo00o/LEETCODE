@@ -34,7 +34,7 @@ private:
     }
 public:
     Node* cloneGraph(Node* node) {
-        unordered_map<Node*, Node*> umap;
+        unordered_map<Node*, Node*> umap; // unordered_map is used to avoid repeated visit
         return dfs(node, umap);
     }
 };

@@ -6,12 +6,12 @@
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
-        int maxCurr = 0, maxSoFar = 0;
-        for (int i = 1; i < prices.size(); ++i) {
-            maxCurr = max(0, maxCurr += prices[i] - prices[i - 1]);
-            maxSoFar = max(maxSoFar, maxCurr);
+        int profit = 0, buy = INT_MAX;
+        for (auto p : prices) {
+            buy = min(buy, p);
+            profit = max(profit, p - buy);
         }
-        return maxSoFar;
+        return profit;
     }
 };
 
