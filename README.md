@@ -153,6 +153,7 @@ ___
 + [`313-super-ugly-number`](./src/313.super-ugly-number.cpp)
 + [`314-binary-tree-vertical-order-traversal`](./src/314.binary-tree-vertical-order-traversal.cpp)
 + [`324-wiggle-sort-ii`](./src/324.wiggle-sort-ii.cpp)
++ [`347-top-k-frequent-elements`](./src/347.top-k-frequent-elements.cpp)
 + [`350-intersection-of-two-arrays-ii`](./src/350.intersection-of-two-arrays-ii.cpp)
 + [`375-getMoneyAmount`](./src/375.getMoneyAmount.cpp)
 + [`409-longest-palindrome`](./src/409.longest-palindrome.cpp)
