@@ -29,21 +29,18 @@ public:
         return cnt == 0;
     }
 
-    void dfs(string& s, int start, int l, int r, vector<string>& res) {
+    void dfs(string s, int start, int l, int r, vector<string>& res) {
         if (l == 0 && r == 0) {
             if (isValid(s)) res.push_back(s);
             return;
         }
         for (int i = start; i < s.size(); ++i) {
             if (i > start && s[i] == s[i - 1]) continue;
-            if (s[i] == '(' || s[i] == ')') {
-                string tmp = s;
-                tmp.erase(i, 1);
-                if (r > 0 && s[i] == ')') {
-                    dfs(tmp, i, l, r - 1, res);
-                } else {
-                    dfs(tmp, i, l - 1, r, res);
-                }
+            if (l > 0 && s[i] == '(') {
+                dfs(s.substr(0, i) + s.substr(i + 1), i, l - 1, r, res);
+            }
+            if (r > 0 && s[i] == ')') {
+                dfs(s.substr(0, i) + s.substr(i + 1), i, l, r - 1, res);
             }
         }
     }
