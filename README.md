@@ -207,6 +207,7 @@ ___
 + [`725-split-linked-list-in-parts`](./src/725.split-linked-list-in-parts.cpp)
 + [`771-numJewelsInStones`](./src/771.numJewelsInStones.cpp)
 + [`778-swim-in-rising-water`](./src/778.swim-in-rising-water.cpp)
++ [`785-is-graph-bipartite`](./src/785.is-graph-bipartite.cpp)
 + [`825-friends-of-appropriate-ages`](./src/825.friends-of-appropriate-ages.cpp)
 + [`841-keys-and-rooms`](./src/841.keys-and-rooms.cpp)
 + [`863-all-nodes-distance-k-in-binary-tree`](./src/863.all-nodes-distance-k-in-binary-tree.cpp)
