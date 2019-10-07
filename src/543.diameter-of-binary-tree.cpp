@@ -25,9 +25,7 @@ public:
         if (!root) return 0;
         int leftDepth = dfs(root->left);
         int rightDepth = dfs(root->right);
-        if (leftDepth + rightDepth > maxDepth) {
-            maxDepth = leftDepth + rightDepth;
-        }
+        maxDepth = max(maxDepth, leftDepth + rightDepth);
         return 1 + max(leftDepth, rightDepth);
     }
 };
