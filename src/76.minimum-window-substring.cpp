@@ -4,23 +4,34 @@
  * [76] Minimum Window Substring
  */
 class Solution {
+private:
+    int minLen = INT_MAX;
+    int cnt = 0;
 public:
     string minWindow(string s, string t) {
         string res = "";
         unordered_map<char, int> umap;
-        for (auto c : t) umap[c]++;
-        int left = 0, min = INT_MAX, cnt = 0;
+        for (char &c : t) {
+            umap[c] ++;
+        }
+        int left = 0;
         for (int i = 0; i < s.size(); ++i) {
-            umap[s[i]]--;
-            if (umap[s[i]] >= 0) cnt++;
-            while (cnt == t.size()) {
-                if (min > i - left + 1) {
-                    min = i - left + 1;
-                    res = s.substr(left, min);
+            char c = s[i];
+            umap[c] --;
+            if (umap[c] >= 0) { // c is in T
+                cnt ++;
+            }
+            while (cnt == t.size()) { // contain all char in T
+                if (minLen > i - left + 1) {
+                    minLen = i - left + 1;
+                    res = s.substr(left, minLen);
                 }
-                umap[s[left]]++;
-                if (umap[s[left]] > 0) cnt--;
-                left++;
+                char leftmost = s[left];
+                umap[leftmost] ++;
+                if (umap[leftmost] > 0) {
+                    cnt --;
+                }
+                left ++;
             }
         }
         return res;

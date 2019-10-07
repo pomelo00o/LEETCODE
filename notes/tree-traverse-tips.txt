@@ -1,0 +1,50 @@
+tree-traverse一般有两种类型
+
+第一种：pre-order, in-order, post-order
+第一选择是recursive way:
+eg: 
+func inorder(node) {
+    inorder(node->left); 
+    visit(node); 
+    inorder(node->right);
+}
+第二选择是stack:
+eg:
+func inorder(node) {
+    while (!stk.empty() || p) {
+        if (p) {
+            stk.push(p);
+            p = p->left;
+        } else {
+            p = stk.top();
+            stk.pop();
+            p = p->right;
+        }
+    }
+}
+
+第二种：level order的遍历
+第一选择是BFS:
+eg:
+func bfs(node) {
+    q.push(node);
+    while (!q.empty()) {
+        int n = q.size();
+        for (int i = 0; i < n; ++i) {
+            Node* n = q.top();
+            q.pop();
+            if (n->left) q.push(n->left);
+            if (n->right) q.push(n->right);
+        }
+    }
+}
+第二选择是DFS:
+eg:
+func dfs(node, level, vec) {
+    if (level == vec.size()) {
+        vec.push_back({});
+    }
+    res[level].push_back(node);
+    if (node->left) dfs(node, level + 1, vec);
+    if (node->right) dfs(node, level + 1, vec);
+}
