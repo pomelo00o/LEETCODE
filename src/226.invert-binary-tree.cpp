@@ -17,10 +17,10 @@
 class Solution {
 public:
     TreeNode* invertTree(TreeNode* root) {
-        if (!root) return root;
-        TreeNode* left = invertTree(root->left), *right = invertTree(root->right);
-        root->left = right;
-        root->right = left;
+        if (!root) return nullptr;
+        TreeNode* left = root->left;
+        root->left = invertTree(root->right);
+        root->right = invertTree(left);
         return root;
     }
 };

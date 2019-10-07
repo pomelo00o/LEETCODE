@@ -13,20 +13,21 @@
  * };
  */
 class Solution {
+private:
+    int maxLen = 0;
 public:
-    int maxDepth = 0;
-
     int diameterOfBinaryTree(TreeNode* root) {
-        dfs(root);
-        return maxDepth;
+        maxLenFromThisNode(root);
+        return maxLen;
     }
 
-    int dfs(TreeNode* root) {
-        if (!root) return 0;
-        int leftDepth = dfs(root->left);
-        int rightDepth = dfs(root->right);
-        maxDepth = max(maxDepth, leftDepth + rightDepth);
-        return 1 + max(leftDepth, rightDepth);
+    int maxLenFromThisNode(TreeNode* node) {
+        if (!node) return 0;
+        int left = maxLenFromThisNode(node->left);
+        int right = maxLenFromThisNode(node->right);
+        maxLen = max(maxLen, left + right);
+        return 1 + max(left, right);
     }
+ 
 };
 

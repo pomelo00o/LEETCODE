@@ -17,16 +17,16 @@ public:
     vector<vector<int>> levelOrder(TreeNode* root) {
         vector<vector<int>> res;
         int depth = 0;
-        bfs(res, depth, root);
+        dfs(res, depth, root);
         return res;
     }
 
-    void bfs(vector<vector<int>>& res, int depth, TreeNode* root) {
+    void dfs(vector<vector<int>>& res, int depth, TreeNode* root) {
         if (!root) return;
         if (res.size() == depth) res.push_back(vector<int>());
         res[depth].push_back(root->val);
-        bfs(res, depth + 1, root->left);
-        bfs(res, depth + 1, root->right);
+        dfs(res, depth + 1, root->left);
+        dfs(res, depth + 1, root->right);
     }
 };
 

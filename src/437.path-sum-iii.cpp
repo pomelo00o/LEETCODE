@@ -16,18 +16,12 @@ class Solution {
 public:
     int pathSum(TreeNode* root, int target) {
         if (!root) return 0;
-        int fromCurr = count(root, target);
-        int fromLeft = pathSum(root->left, target);
-        int fromRight = pathSum(root->right, target);
-        return fromCurr + fromLeft + fromRight;
+        return pathSumFromThisNode(root, target) + pathSum(root->left, target) + pathSum(root->right, target);
     }
 
-    int count(TreeNode* node, int target) {
+    int pathSumFromThisNode(TreeNode* node, int target) {
         if (!node) return 0;
-        int fromCurr = (node->val == target) ? 1 : 0;
-        int fromLeft = count(node->left, target - node->val);
-        int fromRight = count(node->right, target - node->val);
-        return fromCurr + fromLeft + fromRight;
+        return (node->val == target) + pathSumFromThisNode(node->left, target - node->val) + pathSumFromThisNode(node->right, target - node->val);
     }
 };
 
