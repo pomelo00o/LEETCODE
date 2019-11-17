@@ -18,7 +18,7 @@ def add_file():
         if ".DS_Store" in file_list:
             file_list.remove(file_to_remove)
 
-        file_list.sort(key = take_curr_index)
+        file_list.sort(key=take_curr_index)
 
         start_pos = content.index('## <a name = "solution" /> Solution') + 1
         content.insert(start_pos, "")
@@ -28,7 +28,8 @@ def add_file():
         for file_name in file_list:
             file_path = dir + '/' + file_name
             name_in_md = file_name.replace('.', '-')
-            lines = '+ [`' + name_in_md[:len(name_in_md) - 4] + '`](' + file_path + ')'
+            lines = '+ [`' + \
+                name_in_md[:len(name_in_md) - 4] + '`](' + file_path + ')'
             if lines not in content:
                 content.insert(start_pos, lines)
                 start_pos += 1
